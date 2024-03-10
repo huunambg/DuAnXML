@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 {
     public partial class Login : Form
     {
+
+
+        string fileName = @"D:\Soure_Code\Window\BaoCaoXMLNhom3\Modern Sliding Sidebar - C-Sharp Winform\TaiKhoan.xml";
+        XmlDocument doc = new XmlDocument();
+        XmlElement ql_taikhoan;
+
         public Login()
         {
             InitializeComponent();
@@ -27,12 +34,37 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             Application.Exit();
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
+        private void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
-            this.Hide();
-            MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            doc.Load(fileName);
+
+            ql_taikhoan = doc.DocumentElement;
+            XmlNode check_tk = ql_taikhoan.SelectSingleNode("TaiKhoan[TaiKhoan ='" + txt_taikhoan.Text + "']");
+
+
+            if (check_tk != null)
+            {
+                if (check_tk.SelectSingleNode("MatKhau").InnerText == txt_matkhau.Text)
+                {
+                    Form1 f = new Form1();
+                    f.Show();
+                    this.Hide();
+                    MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Đăng nhập thất bại");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản không tồn tại", "Đăng nhập thất bại");
+            }
+
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
