@@ -87,7 +87,7 @@
             this.SideBar.Controls.Add(this.gunaPanel2);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
-            this.SideBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SideBar.Margin = new System.Windows.Forms.Padding(4);
             this.SideBar.MaximumSize = new System.Drawing.Size(289, 608);
             this.SideBar.MinimumSize = new System.Drawing.Size(73, 608);
             this.SideBar.Name = "SideBar";
@@ -108,7 +108,7 @@
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(9, 522);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(5);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -126,7 +126,7 @@
             this.gunaPanel7.Controls.Add(this.Help_Button);
             this.gunaPanel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel7.Location = new System.Drawing.Point(0, 446);
-            this.gunaPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel7.Name = "gunaPanel7";
             this.gunaPanel7.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel7.TabIndex = 6;
@@ -145,7 +145,7 @@
             this.Help_Button.Image = ((System.Drawing.Image)(resources.GetObject("Help_Button.Image")));
             this.Help_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Help_Button.Location = new System.Drawing.Point(9, 10);
-            this.Help_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Help_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Help_Button.Name = "Help_Button";
             this.Help_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Help_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -162,7 +162,7 @@
             this.gunaPanel6.Controls.Add(this.About_Button);
             this.gunaPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel6.Location = new System.Drawing.Point(0, 378);
-            this.gunaPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel6.Name = "gunaPanel6";
             this.gunaPanel6.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel6.TabIndex = 4;
@@ -181,7 +181,7 @@
             this.About_Button.Image = ((System.Drawing.Image)(resources.GetObject("About_Button.Image")));
             this.About_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.About_Button.Location = new System.Drawing.Point(9, 10);
-            this.About_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.About_Button.Margin = new System.Windows.Forms.Padding(5);
             this.About_Button.Name = "About_Button";
             this.About_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.About_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -199,7 +199,7 @@
             this.gunaPanel5.Controls.Add(this.Statistics_Button);
             this.gunaPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel5.Location = new System.Drawing.Point(0, 310);
-            this.gunaPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel5.TabIndex = 3;
@@ -218,7 +218,7 @@
             this.Statistics_Button.Image = ((System.Drawing.Image)(resources.GetObject("Statistics_Button.Image")));
             this.Statistics_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Statistics_Button.Location = new System.Drawing.Point(9, 10);
-            this.Statistics_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Statistics_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Statistics_Button.Name = "Statistics_Button";
             this.Statistics_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Statistics_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -236,7 +236,7 @@
             this.gunaPanel8.Controls.Add(this.Customers_Button);
             this.gunaPanel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel8.Location = new System.Drawing.Point(0, 242);
-            this.gunaPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel8.Name = "gunaPanel8";
             this.gunaPanel8.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel8.TabIndex = 5;
@@ -255,7 +255,7 @@
             this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
             this.Customers_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Customers_Button.Location = new System.Drawing.Point(9, 10);
-            this.Customers_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Customers_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Customers_Button.Name = "Customers_Button";
             this.Customers_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Customers_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -273,7 +273,7 @@
             this.gunaPanel4.Controls.Add(this.Orders_Button);
             this.gunaPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel4.Location = new System.Drawing.Point(0, 174);
-            this.gunaPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel4.Name = "gunaPanel4";
             this.gunaPanel4.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel4.TabIndex = 2;
@@ -292,7 +292,7 @@
             this.Orders_Button.Image = ((System.Drawing.Image)(resources.GetObject("Orders_Button.Image")));
             this.Orders_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Orders_Button.Location = new System.Drawing.Point(9, 9);
-            this.Orders_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Orders_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Orders_Button.Name = "Orders_Button";
             this.Orders_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Orders_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -310,7 +310,7 @@
             this.gunaPanel3.Controls.Add(this.Home_Button);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 106);
-            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel3.TabIndex = 1;
@@ -329,7 +329,7 @@
             this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
             this.Home_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Home_Button.Location = new System.Drawing.Point(9, 9);
-            this.Home_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Home_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Home_Button.Name = "Home_Button";
             this.Home_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Home_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -347,7 +347,7 @@
             this.gunaPanel2.Controls.Add(this.gunaPanel9);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(289, 106);
             this.gunaPanel2.TabIndex = 0;
@@ -356,7 +356,7 @@
             // 
             this.gunaPanel9.Controls.Add(this.Menu_Button);
             this.gunaPanel9.Location = new System.Drawing.Point(0, 15);
-            this.gunaPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel9.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel9.Name = "gunaPanel9";
             this.gunaPanel9.Size = new System.Drawing.Size(284, 84);
             this.gunaPanel9.TabIndex = 2;
@@ -375,7 +375,7 @@
             this.Menu_Button.Image = ((System.Drawing.Image)(resources.GetObject("Menu_Button.Image")));
             this.Menu_Button.ImageSize = new System.Drawing.Size(20, 20);
             this.Menu_Button.Location = new System.Drawing.Point(9, 17);
-            this.Menu_Button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Menu_Button.Name = "Menu_Button";
             this.Menu_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Menu_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -444,6 +444,7 @@
             this.gunaElipsePanel1.Radius = 30;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(1372, 958);
             this.gunaElipsePanel1.TabIndex = 9;
+            this.gunaElipsePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel1_Paint);
             // 
             // gunaImageButton3
             // 
@@ -453,7 +454,7 @@
             this.gunaImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaImageButton3.Image")));
             this.gunaImageButton3.ImageSize = new System.Drawing.Size(28, 28);
             this.gunaImageButton3.Location = new System.Drawing.Point(1229, 4);
-            this.gunaImageButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaImageButton3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaImageButton3.Name = "gunaImageButton3";
             this.gunaImageButton3.OnHoverImage = null;
             this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
@@ -469,7 +470,7 @@
             this.gunaImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaImageButton2.Image")));
             this.gunaImageButton2.ImageSize = new System.Drawing.Size(28, 28);
             this.gunaImageButton2.Location = new System.Drawing.Point(1285, 4);
-            this.gunaImageButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaImageButton2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaImageButton2.Name = "gunaImageButton2";
             this.gunaImageButton2.OnHoverImage = null;
             this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
@@ -484,7 +485,7 @@
             this.gunaImageButton1.Image = global::Modern_Sliding_Sidebar___C_Sharp_Winform.Properties.Resources.github_64px;
             this.gunaImageButton1.ImageSize = new System.Drawing.Size(74, 74);
             this.gunaImageButton1.Location = new System.Drawing.Point(497, 0);
-            this.gunaImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaImageButton1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaImageButton1.Name = "gunaImageButton1";
             this.gunaImageButton1.OnHoverImage = global::Modern_Sliding_Sidebar___C_Sharp_Winform.Properties.Resources.github_64px_Hover;
             this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
@@ -499,7 +500,7 @@
             this.Close_Button.Image = ((System.Drawing.Image)(resources.GetObject("Close_Button.Image")));
             this.Close_Button.ImageSize = new System.Drawing.Size(28, 28);
             this.Close_Button.Location = new System.Drawing.Point(1340, 4);
-            this.Close_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Close_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Close_Button.Name = "Close_Button";
             this.Close_Button.OnHoverImage = global::Modern_Sliding_Sidebar___C_Sharp_Winform.Properties.Resources.multiply_48px_____;
             this.Close_Button.OnHoverImageOffset = new System.Drawing.Point(0, 0);
@@ -517,7 +518,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.SideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

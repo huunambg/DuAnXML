@@ -13,7 +13,8 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Form1 : Form
     {
         bool sideBar_Expand = true;
-        public Form1()
+        string id_taikhoan;
+        public Form1(string id_taikhoan)
         {
             InitializeComponent();
             About f = new About();
@@ -24,6 +25,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             f.Show();
             gunaElipsePanel1.SizeChanged += (s, ev) => { f.Size = gunaElipsePanel1.Size; };
             f.SizeChanged += (s, ev) => { gunaElipsePanel1.Size = f.Size; };
+            this.id_taikhoan = id_taikhoan;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -96,7 +98,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void Home_Button_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
+            Form2 f = new Form2(this.id_taikhoan);
             f.TopLevel = false;
             f.Size = gunaElipsePanel1.Size; // Set size of the new form to match PanelMain
             gunaElipsePanel1.Controls.Clear();
@@ -161,6 +163,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             Login lg = new Login();
             lg.Show();
             this.Hide();
+        }
+
+        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

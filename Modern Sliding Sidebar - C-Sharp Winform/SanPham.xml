@@ -1,82 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
 <QL_SanPham>
-
+  <DS_SanPham>
+    <Id_TaiKhoan>1</Id_TaiKhoan>
     <SanPham MaSP="SP001">
-        <TenSP>Điện thoại di động</TenSP>
-        <Gia>5000000</Gia>
-        <SoLuongTon>50</SoLuongTon>
-        <NgaySX>2023-01-15</NgaySX>
-        <HanSD>2025-01-15</HanSD>
+      <TenSP>Điện thoại di động</TenSP>
+      <Gia>5000000</Gia>
+      <SoLuongTon>50</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
     </SanPham>
     <SanPham MaSP="SP002">
-        <TenSP>Laptop</TenSP>
-        <Gia>15000000</Gia>
-        <SoLuongTon>20</SoLuongTon>
-        <NgaySX>2022-09-20</NgaySX>
-        <HanSD>2026-09-20</HanSD>
+      <TenSP>Laptop</TenSP>
+      <Gia>15000000</Gia>
+      <SoLuongTon>20</SoLuongTon>
+      <NgaySX>2022-09-20</NgaySX>
+      <HanSD>2026-09-20</HanSD>
+    </SanPham>
+  </DS_SanPham>
+  <DS_SanPham>
+    <Id_TaiKhoan>3</Id_TaiKhoan>
+    <SanPham MaSP="SP001">
+      <TenSP>Điện thoại di động</TenSP>
+      <Gia>5000000</Gia>
+      <SoLuongTon>50</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP002">
+      <TenSP>Laptop</TenSP>
+      <Gia>15000000</Gia>
+      <SoLuongTon>20</SoLuongTon>
+      <NgaySX>2022-09-20</NgaySX>
+      <HanSD>2026-09-20</HanSD>
     </SanPham>
     <SanPham MaSP="SP003">
-        <TenSP>Máy ảnh</TenSP>
-        <Gia>8000000</Gia>
-        <SoLuongTon>30</SoLuongTon>
-        <NgaySX>2023-05-10</NgaySX>
-        <HanSD>2027-05-10</HanSD>
+      <TenSP>Máy ảnh</TenSP>
+      <Gia>8000000</Gia>
+      <SoLuongTon>30</SoLuongTon>
+      <NgaySX>2023-05-10</NgaySX>
+      <HanSD>2027-05-10</HanSD>
     </SanPham>
-	<SanPham MaSP="SP004">
-		<TenSP>RAM</TenSP>
-		<Gia>8000000</Gia>
-		<SoLuongTon>30</SoLuongTon>
-		<NgaySX>2023-05-10</NgaySX>
-		<HanSD>2027-05-10</HanSD>
-	</SanPham>
-=======
-
-	<DS_SanPham>
-		<Id_TaiKhoan>1</Id_TaiKhoan>
-		<SanPham MaSP="SP001">
-			<TenSP>Điện thoại di động</TenSP>
-			<Gia>5000000</Gia>
-			<SoLuongTon>50</SoLuongTon>
-			<NgaySX>2023-01-15</NgaySX>
-			<HanSD>2025-01-15</HanSD>
-		</SanPham>
-		<SanPham MaSP="SP002">
-			<TenSP>Laptop</TenSP>
-			<Gia>15000000</Gia>
-			<SoLuongTon>20</SoLuongTon>
-			<NgaySX>2022-09-20</NgaySX>
-			<HanSD>2026-09-20</HanSD>
-		</SanPham>
-	</DS_SanPham>>
-
-
-
-	<DS_SanPham>
-		<Id_TaiKhoan>2</Id_TaiKhoan>
-		<SanPham MaSP="SP001">
-			<TenSP>Điện thoại di động</TenSP>
-			<Gia>5000000</Gia>
-			<SoLuongTon>50</SoLuongTon>
-			<NgaySX>2023-01-15</NgaySX>
-			<HanSD>2025-01-15</HanSD>
-		</SanPham>
-		<SanPham MaSP="SP002">
-			<TenSP>Laptop</TenSP>
-			<Gia>15000000</Gia>
-			<SoLuongTon>20</SoLuongTon>
-			<NgaySX>2022-09-20</NgaySX>
-			<HanSD>2026-09-20</HanSD>
-		</SanPham>
-
-		<SanPham MaSP="SP003">
-			<TenSP>Máy ảnh</TenSP>
-			<Gia>8000000</Gia>
-			<SoLuongTon>30</SoLuongTon>
-			<NgaySX>2023-05-10</NgaySX>
-			<HanSD>2027-05-10</HanSD>
-		</SanPham>
-
-	</DS_SanPham>
-
-
+    <SanPham MaSP="4">
+      <TenSP>4</TenSP>
+      <Gia>4</Gia>
+      <SoLuongTon>4</SoLuongTon>
+      <NgaySX>4</NgaySX>
+      <HanSD>4</HanSD>
+    </SanPham>
+    <SanPham MaSP="5">
+      <TenSP>5</TenSP>
+      <Gia>5</Gia>
+      <SoLuongTon>5</SoLuongTon>
+      <NgaySX>5</NgaySX>
+      <HanSD>5</HanSD>
+    </SanPham>
+  </DS_SanPham>
 </QL_SanPham>

@@ -13,16 +13,22 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 {
     public partial class Form2 : Form
     {
-        String ma_sp;
+
+        string id_taikhoan;
         XmlDocument doc = new XmlDocument();
         String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
         XmlElement ql_sanpham;
         
         private void Show(DataGridView dgv)
         {
+            dgv.Rows.Clear();
             doc.Load(filename);
             ql_sanpham = doc.DocumentElement;
-            XmlNodeList ds = ql_sanpham.SelectNodes("SanPham");
+           
+
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_SanPham.SelectNodes("SanPham");
             int sd = 0;
             int serialNumber = 1;
             foreach (XmlNode node in ds)
@@ -39,10 +45,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
                 serialNumber++;
             }
         }
-        public Form2()
+        public Form2(string id_taikhoan)
         {
             InitializeComponent();
-            this.ma_sp = ma_sp;
+            this.id_taikhoan = id_taikhoan;
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -53,6 +60,52 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         private void dgv_sp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+
+            doc.Load(filename);
+            ql_sanpham = doc.DocumentElement;
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNode SanPham = doc.CreateElement("SanPham");
+
+            XmlAttribute MaSP = doc.CreateAttribute("MaSP");
+            MaSP.Value = txt_masp.Text;
+            SanPham.Attributes.Append(MaSP);
+
+            XmlElement TenSP = doc.CreateElement("TenSP");
+            TenSP.InnerText = txt_tensp.Text;
+            SanPham.AppendChild(TenSP);
+
+            XmlElement Gia = doc.CreateElement("Gia");
+            Gia.InnerText = txt_gia.Text;
+            SanPham.AppendChild(Gia);
+
+            XmlElement SoLuongTon = doc.CreateElement("SoLuongTon");
+            SoLuongTon.InnerText = txt_soluongton.Text;
+            SanPham.AppendChild(SoLuongTon);
+
+            XmlElement NgaySX = doc.CreateElement("NgaySX");
+            NgaySX.InnerText = txt_ngaysx.Text;
+            SanPham.AppendChild(NgaySX);
+
+            XmlElement HanSD = doc.CreateElement("HanSD");
+            HanSD.InnerText = txt_hsd.Text;
+            SanPham.AppendChild(HanSD);
+
+            DS_SanPham.AppendChild(SanPham);
+            doc.Save(filename);
+            Show(dgv_sp);
+
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            doc.Load(filename);
+            ql_sanpham = doc.DocumentElement;
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
         }
     }
 }

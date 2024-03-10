@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.dgv_sp = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HanSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttimkiemsp = new Guna.UI.WinForms.GunaTextBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
@@ -46,13 +53,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,13 +73,56 @@
             this.SoLuongTon,
             this.NgaySX,
             this.HanSD});
-            this.dgv_sp.Location = new System.Drawing.Point(353, 45);
+            this.dgv_sp.Location = new System.Drawing.Point(353, 46);
+            this.dgv_sp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_sp.Name = "dgv_sp";
             this.dgv_sp.RowHeadersWidth = 51;
             this.dgv_sp.RowTemplate.Height = 24;
-            this.dgv_sp.Size = new System.Drawing.Size(1012, 643);
+            this.dgv_sp.Size = new System.Drawing.Size(1012, 642);
             this.dgv_sp.TabIndex = 7;
             this.dgv_sp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sp_CellClick);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            // 
+            // MaSP
+            // 
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            // 
+            // TenSP
+            // 
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.MinimumWidth = 6;
+            this.TenSP.Name = "TenSP";
+            // 
+            // Gia
+            // 
+            this.Gia.HeaderText = "Giá";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            // 
+            // SoLuongTon
+            // 
+            this.SoLuongTon.HeaderText = "Số lượng tồn";
+            this.SoLuongTon.MinimumWidth = 6;
+            this.SoLuongTon.Name = "SoLuongTon";
+            // 
+            // NgaySX
+            // 
+            this.NgaySX.HeaderText = "Ngày sản xuất";
+            this.NgaySX.MinimumWidth = 6;
+            this.NgaySX.Name = "NgaySX";
+            // 
+            // HanSD
+            // 
+            this.HanSD.HeaderText = "Hạn sử dụng";
+            this.HanSD.MinimumWidth = 6;
+            this.HanSD.Name = "HanSD";
             // 
             // txttimkiemsp
             // 
@@ -93,28 +136,32 @@
             this.txttimkiemsp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txttimkiemsp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txttimkiemsp.Location = new System.Drawing.Point(1035, 5);
+            this.txttimkiemsp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttimkiemsp.Name = "txttimkiemsp";
             this.txttimkiemsp.PasswordChar = '\0';
             this.txttimkiemsp.Radius = 10;
-            this.txttimkiemsp.Size = new System.Drawing.Size(197, 34);
+            this.txttimkiemsp.Size = new System.Drawing.Size(197, 37);
             this.txttimkiemsp.TabIndex = 12;
             // 
             // btn_them
             // 
             this.btn_them.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_them.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_them.Location = new System.Drawing.Point(42, 520);
+            this.btn_them.Location = new System.Drawing.Point(43, 519);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(269, 52);
             this.btn_them.TabIndex = 14;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_sua
             // 
             this.btn_sua.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_sua.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_sua.Location = new System.Drawing.Point(42, 578);
+            this.btn_sua.Location = new System.Drawing.Point(43, 578);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(269, 52);
             this.btn_sua.TabIndex = 15;
@@ -125,18 +172,21 @@
             // 
             this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_xoa.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_xoa.Location = new System.Drawing.Point(42, 636);
+            this.btn_xoa.Location = new System.Drawing.Point(43, 636);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(269, 52);
             this.btn_xoa.TabIndex = 16;
             this.btn_xoa.Text = "Xoá";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_timkiem
             // 
             this.btn_timkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_timkiem.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_timkiem.Location = new System.Drawing.Point(1238, 5);
+            this.btn_timkiem.Location = new System.Drawing.Point(1237, 5);
+            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(127, 34);
             this.btn_timkiem.TabIndex = 17;
@@ -154,11 +204,12 @@
             this.txt_masp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_masp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_masp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_masp.Location = new System.Drawing.Point(128, 45);
+            this.txt_masp.Location = new System.Drawing.Point(128, 46);
+            this.txt_masp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_masp.Name = "txt_masp";
             this.txt_masp.PasswordChar = '\0';
             this.txt_masp.Radius = 10;
-            this.txt_masp.Size = new System.Drawing.Size(197, 34);
+            this.txt_masp.Size = new System.Drawing.Size(197, 37);
             this.txt_masp.TabIndex = 18;
             // 
             // txt_tensp
@@ -173,10 +224,11 @@
             this.txt_tensp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_tensp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_tensp.Location = new System.Drawing.Point(128, 85);
+            this.txt_tensp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_tensp.Name = "txt_tensp";
             this.txt_tensp.PasswordChar = '\0';
             this.txt_tensp.Radius = 10;
-            this.txt_tensp.Size = new System.Drawing.Size(197, 34);
+            this.txt_tensp.Size = new System.Drawing.Size(197, 37);
             this.txt_tensp.TabIndex = 19;
             // 
             // txt_gia
@@ -190,11 +242,12 @@
             this.txt_gia.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_gia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_gia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_gia.Location = new System.Drawing.Point(128, 125);
+            this.txt_gia.Location = new System.Drawing.Point(128, 126);
+            this.txt_gia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_gia.Name = "txt_gia";
             this.txt_gia.PasswordChar = '\0';
             this.txt_gia.Radius = 10;
-            this.txt_gia.Size = new System.Drawing.Size(197, 34);
+            this.txt_gia.Size = new System.Drawing.Size(197, 37);
             this.txt_gia.TabIndex = 20;
             // 
             // txt_soluongton
@@ -209,10 +262,11 @@
             this.txt_soluongton.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_soluongton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_soluongton.Location = new System.Drawing.Point(128, 165);
+            this.txt_soluongton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_soluongton.Name = "txt_soluongton";
             this.txt_soluongton.PasswordChar = '\0';
             this.txt_soluongton.Radius = 10;
-            this.txt_soluongton.Size = new System.Drawing.Size(197, 34);
+            this.txt_soluongton.Size = new System.Drawing.Size(197, 37);
             this.txt_soluongton.TabIndex = 21;
             // 
             // txt_ngaysx
@@ -226,11 +280,12 @@
             this.txt_ngaysx.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_ngaysx.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_ngaysx.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_ngaysx.Location = new System.Drawing.Point(128, 205);
+            this.txt_ngaysx.Location = new System.Drawing.Point(128, 206);
+            this.txt_ngaysx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_ngaysx.Name = "txt_ngaysx";
             this.txt_ngaysx.PasswordChar = '\0';
             this.txt_ngaysx.Radius = 10;
-            this.txt_ngaysx.Size = new System.Drawing.Size(197, 34);
+            this.txt_ngaysx.Size = new System.Drawing.Size(197, 37);
             this.txt_ngaysx.TabIndex = 22;
             // 
             // txt_hsd
@@ -245,10 +300,11 @@
             this.txt_hsd.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_hsd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_hsd.Location = new System.Drawing.Point(128, 245);
+            this.txt_hsd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_hsd.Name = "txt_hsd";
             this.txt_hsd.PasswordChar = '\0';
             this.txt_hsd.Radius = 10;
-            this.txt_hsd.Size = new System.Drawing.Size(197, 34);
+            this.txt_hsd.Size = new System.Drawing.Size(197, 37);
             this.txt_hsd.TabIndex = 23;
             // 
             // label1
@@ -311,48 +367,6 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "Hạn sử dụng";
             // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            // 
-            // MaSP
-            // 
-            this.MaSP.HeaderText = "Mã sản phẩm";
-            this.MaSP.MinimumWidth = 6;
-            this.MaSP.Name = "MaSP";
-            // 
-            // TenSP
-            // 
-            this.TenSP.HeaderText = "Tên sản phẩm";
-            this.TenSP.MinimumWidth = 6;
-            this.TenSP.Name = "TenSP";
-            // 
-            // Gia
-            // 
-            this.Gia.HeaderText = "Giá";
-            this.Gia.MinimumWidth = 6;
-            this.Gia.Name = "Gia";
-            // 
-            // SoLuongTon
-            // 
-            this.SoLuongTon.HeaderText = "Số lượng tồn";
-            this.SoLuongTon.MinimumWidth = 6;
-            this.SoLuongTon.Name = "SoLuongTon";
-            // 
-            // NgaySX
-            // 
-            this.NgaySX.HeaderText = "Ngày sản xuất";
-            this.NgaySX.MinimumWidth = 6;
-            this.NgaySX.Name = "NgaySX";
-            // 
-            // HanSD
-            // 
-            this.HanSD.HeaderText = "Hạn sử dụng";
-            this.HanSD.MinimumWidth = 6;
-            this.HanSD.Name = "HanSD";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -378,6 +392,7 @@
             this.Controls.Add(this.txttimkiemsp);
             this.Controls.Add(this.dgv_sp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
