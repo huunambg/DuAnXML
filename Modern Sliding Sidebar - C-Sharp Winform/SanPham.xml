@@ -21,4 +21,12 @@
         <NgaySX>2023-05-10</NgaySX>
         <HanSD>2027-05-10</HanSD>
     </SanPham>
+	<SanPham MaSP="SP004">
+		<TenSP>RAM</TenSP>
+		<Gia>8000000</Gia>
+		<SoLuongTon>30</SoLuongTon>
+		<NgaySX>2023-05-10</NgaySX>
+		<HanSD>2027-05-10</HanSD>
+	</SanPham>
+
 </QL_SanPham>
