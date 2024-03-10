@@ -106,23 +106,23 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.gunaButton1.Location = new System.Drawing.Point(9, 522);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.gunaButton1.Location = new System.Drawing.Point(7, 424);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Silver;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.gunaButton1.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.gunaButton1.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.gunaButton1.TabIndex = 2;
             this.gunaButton1.Text = "Đăng xuất";
             this.gunaButton1.TextOffsetX = 15;
@@ -150,23 +150,23 @@
             this.Help_Button.ForeColor = System.Drawing.Color.White;
             this.Help_Button.Image = ((System.Drawing.Image)(resources.GetObject("Help_Button.Image")));
             this.Help_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Help_Button.Location = new System.Drawing.Point(9, 10);
             this.Help_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Help_Button.Location = new System.Drawing.Point(7, 8);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Help_Button.Name = "Help_Button";
             this.Help_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Help_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Help_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Help_Button.OnHoverImage = null;
             this.Help_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Help_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Help_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Help_Button.TabIndex = 1;
             this.Help_Button.Text = "Trợ giúp";
             this.Help_Button.TextOffsetX = 15;
@@ -193,23 +193,23 @@
             this.About_Button.ForeColor = System.Drawing.Color.White;
             this.About_Button.Image = ((System.Drawing.Image)(resources.GetObject("About_Button.Image")));
             this.About_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.About_Button.Location = new System.Drawing.Point(9, 10);
             this.About_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.About_Button.Location = new System.Drawing.Point(7, 8);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.About_Button.Name = "About_Button";
             this.About_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.About_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.About_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.About_Button.OnHoverImage = null;
             this.About_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.About_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.About_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.About_Button.TabIndex = 1;
             this.About_Button.Text = "About";
             this.About_Button.TextOffsetX = 15;
@@ -237,23 +237,23 @@
             this.Statistics_Button.ForeColor = System.Drawing.Color.White;
             this.Statistics_Button.Image = ((System.Drawing.Image)(resources.GetObject("Statistics_Button.Image")));
             this.Statistics_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Statistics_Button.Location = new System.Drawing.Point(9, 10);
             this.Statistics_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Statistics_Button.Location = new System.Drawing.Point(7, 8);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Statistics_Button.Name = "Statistics_Button";
             this.Statistics_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Statistics_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Statistics_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Statistics_Button.OnHoverImage = null;
             this.Statistics_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Statistics_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Statistics_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Statistics_Button.TabIndex = 1;
             this.Statistics_Button.Text = "Quản lý nhân viên";
             this.Statistics_Button.TextOffsetX = 15;
@@ -281,23 +281,23 @@
             this.Customers_Button.ForeColor = System.Drawing.Color.White;
             this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
             this.Customers_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Customers_Button.Location = new System.Drawing.Point(9, 10);
             this.Customers_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Customers_Button.Location = new System.Drawing.Point(7, 8);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Customers_Button.Name = "Customers_Button";
             this.Customers_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Customers_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Customers_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Customers_Button.OnHoverImage = null;
             this.Customers_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Customers_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Customers_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Customers_Button.TabIndex = 1;
             this.Customers_Button.Text = "Quản lý khách hàng";
             this.Customers_Button.TextOffsetX = 15;
@@ -325,23 +325,23 @@
             this.Orders_Button.ForeColor = System.Drawing.Color.White;
             this.Orders_Button.Image = ((System.Drawing.Image)(resources.GetObject("Orders_Button.Image")));
             this.Orders_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Orders_Button.Location = new System.Drawing.Point(9, 9);
             this.Orders_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Orders_Button.Location = new System.Drawing.Point(7, 7);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Orders_Button.Name = "Orders_Button";
             this.Orders_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Orders_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Orders_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Orders_Button.OnHoverImage = null;
             this.Orders_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Orders_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Orders_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Orders_Button.TabIndex = 1;
             this.Orders_Button.Text = "Quản lý hoá đơn";
             this.Orders_Button.TextOffsetX = 15;
@@ -369,23 +369,23 @@
             this.Home_Button.ForeColor = System.Drawing.Color.White;
             this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
             this.Home_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Home_Button.Location = new System.Drawing.Point(9, 9);
             this.Home_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Home_Button.Location = new System.Drawing.Point(7, 7);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Home_Button.Name = "Home_Button";
             this.Home_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Home_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Home_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Home_Button.OnHoverImage = null;
             this.Home_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Home_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Home_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Home_Button.TabIndex = 1;
             this.Home_Button.Text = "Quản lý hàng hoá";
             this.Home_Button.TextOffsetX = 15;
@@ -421,23 +421,23 @@
             this.Menu_Button.ForeColor = System.Drawing.Color.White;
             this.Menu_Button.Image = ((System.Drawing.Image)(resources.GetObject("Menu_Button.Image")));
             this.Menu_Button.ImageSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
+
             this.Menu_Button.Location = new System.Drawing.Point(9, 17);
             this.Menu_Button.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.Menu_Button.Location = new System.Drawing.Point(7, 14);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Menu_Button.Name = "Menu_Button";
             this.Menu_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.Menu_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Menu_Button.OnHoverForeColor = System.Drawing.Color.Silver;
             this.Menu_Button.OnHoverImage = null;
             this.Menu_Button.OnPressedColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.Menu_Button.Size = new System.Drawing.Size(271, 49);
-=======
+
             this.Menu_Button.Size = new System.Drawing.Size(203, 40);
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
             this.Menu_Button.TabIndex = 1;
             this.Menu_Button.Text = "Menu";
             this.Menu_Button.TextOffsetX = 15;

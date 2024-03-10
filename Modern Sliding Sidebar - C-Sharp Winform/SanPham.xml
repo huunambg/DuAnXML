@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?> 
 <QL_SanPham>
-<<<<<<< HEAD
+
     <SanPham MaSP="SP001">
         <TenSP>Điện thoại di động</TenSP>
         <Gia>5000000</Gia>
@@ -77,6 +77,6 @@
 		</SanPham>
 
 	</DS_SanPham>
->>>>>>> 4c31bddd98ffeb8c0ea0105f8d480fc7034d3595
+
 
 </QL_SanPham>
