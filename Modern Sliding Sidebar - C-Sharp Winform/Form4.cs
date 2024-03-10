@@ -62,7 +62,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
             XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
 
-            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
+
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
             XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
 
-            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
+
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
             XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
 
-            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
+
         }
 
         private void dgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)
