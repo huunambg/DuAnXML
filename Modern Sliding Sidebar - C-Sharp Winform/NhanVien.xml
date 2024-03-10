@@ -18,4 +18,10 @@
 		<SDT>0123456789</SDT>
 		<DiaChi>123 Oak Road, Village</DiaChi>
 	</NhanVien>
+	<NhanVien MaNV="NV003">
+		<TenNV>Nguyen Thanh Long</TenNV>
+		<ChucVu>Nhan vien</ChucVu>
+		<SDT>0123456789</SDT>
+		<DiaChi>123 Oak Road, Village</DiaChi>
+	</NhanVien>
 </QL_NhanVien>
