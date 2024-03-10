@@ -27,5 +27,9 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         }
 
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

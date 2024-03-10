@@ -16,7 +16,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         string id_taikhoan;
         XmlDocument doc = new XmlDocument();
-        String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
+        String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
         XmlElement ql_sanpham;
         
         private void Show(DataGridView dgv)
@@ -59,7 +59,14 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void dgv_sp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int t = dgv_sp.CurrentCell.RowIndex;
+            
+            txt_masp.Text = dgv_sp.Rows[t].Cells[1].Value.ToString();
+            txt_tensp.Text = dgv_sp.Rows[t].Cells[2].Value.ToString();
+            txt_gia.Text = dgv_sp.Rows[t].Cells[3].Value.ToString();
+            txt_soluongton.Text = dgv_sp.Rows[t].Cells[4].Value.ToString();
+            txt_ngaysx.Text = dgv_sp.Rows[t].Cells[5].Value.ToString();
+            txt_hsd.Text = dgv_sp.Rows[t].Cells[6].Value.ToString();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -106,6 +113,95 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             doc.Load(filename);
             ql_sanpham = doc.DocumentElement;
             XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+            XmlNode spCanXoa = DS_SanPham.SelectSingleNode("SanPham[@MaSP ='" + txt_masp.Text + "']");
+                if (spCanXoa != null)
+                {
+                    DS_SanPham.RemoveChild(spCanXoa);
+                    doc.Save(filename);
+                    
+                }
+            Show(dgv_sp);
+
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            doc.Load(filename);
+            ql_sanpham = doc.DocumentElement;
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNode SanPhamCu = DS_SanPham.SelectSingleNode("SanPham[@MaSP = '" + txt_masp.Text + "']");
+            if(SanPhamCu != null)
+            {
+                XmlNode SanPhamMoi = doc.CreateElement("SanPham");
+
+                XmlAttribute MaSP = doc.CreateAttribute("MaSP");
+                MaSP.Value = txt_masp.Text;
+                SanPhamMoi.Attributes.Append(MaSP);
+
+                XmlElement TenSP = doc.CreateElement("TenSP");
+                TenSP.InnerText = txt_tensp.Text;
+                SanPhamMoi.AppendChild(TenSP);
+
+                XmlElement Gia = doc.CreateElement("Gia");
+                Gia.InnerText = txt_gia.Text;
+                SanPhamMoi.AppendChild(Gia);
+
+                XmlElement SoLuongTon = doc.CreateElement("SoLuongTon");
+                SoLuongTon.InnerText = txt_soluongton.Text;
+                SanPhamMoi.AppendChild(SoLuongTon);
+
+                XmlElement NgaySX = doc.CreateElement("NgaySX");
+                NgaySX.InnerText = txt_ngaysx.Text;
+                SanPhamMoi.AppendChild(NgaySX);
+
+                XmlElement HanSD = doc.CreateElement("HanSD");
+                HanSD.InnerText = txt_hsd.Text;
+                SanPhamMoi.AppendChild(HanSD);
+
+                DS_SanPham.ReplaceChild(SanPhamMoi, SanPhamCu);
+                doc.Save(filename);
+                Show(dgv_sp);
+            }
+
+            
+        }
+
+        private void btn_timkiem_Click(object sender, EventArgs e)
+        {
+
+            dgv_sp.Rows.Clear();
+
+            string maSPCanTim = txttimkiemsp.Text.Trim().ToLower();
+            int serialNumber = 1;
+
+            foreach (XmlNode dsSanPhamNode in ql_sanpham.SelectNodes("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']"))
+            {
+                foreach (XmlNode sanPhamNode in dsSanPhamNode.SelectNodes("SanPham"))
+                {
+                    if (sanPhamNode.Attributes["MaSP"].Value.ToLower() == maSPCanTim)
+                    {
+                        dgv_sp.Rows.Add(
+                            
+                            sanPhamNode.Attributes["MaSP"].Value,
+                            sanPhamNode.SelectSingleNode("TenSP").InnerText,
+                            sanPhamNode.SelectSingleNode("Gia").InnerText,
+                            sanPhamNode.SelectSingleNode("SoLuongTon").InnerText,
+                            sanPhamNode.SelectSingleNode("NgaySX").InnerText,
+                            sanPhamNode.SelectSingleNode("HanSD").InnerText
+                        );
+                        return; // Dừng khi tìm thấy sản phẩm
+                    }
+                }
+            }
+
+            // Nếu không tìm thấy sản phẩm, thông báo cho người dùng
+            MessageBox.Show("Không tìm thấy sản phẩm với mã số này.");
+        }
+
+        private void txttimkiemsp_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -169,5 +169,10 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

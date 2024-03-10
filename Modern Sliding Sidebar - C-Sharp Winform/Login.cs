@@ -14,7 +14,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Login : Form
     {
 
-        string fileName = @"D:\\Soure_Code\\Window\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\TaiKhoan.xml";
+        string fileName = @"D:\zKiemlongJr\XML\BaoCaoXML_Nhom3\Modern Sliding Sidebar - C-Sharp Winform\TaiKhoan.xml";
         XmlDocument doc = new XmlDocument();
         XmlElement ql_taikhoan;
 
@@ -66,6 +66,18 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         private void Close_Button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_dangki_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_dangki_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_DangKi dangki = new Form_DangKi();
+            dangki.ShowDialog();
         }
     }
 }

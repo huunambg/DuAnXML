@@ -142,6 +142,7 @@
             this.txttimkiemsp.Radius = 10;
             this.txttimkiemsp.Size = new System.Drawing.Size(197, 37);
             this.txttimkiemsp.TabIndex = 12;
+            this.txttimkiemsp.TextChanged += new System.EventHandler(this.txttimkiemsp_TextChanged);
             // 
             // btn_them
             // 
@@ -167,6 +168,7 @@
             this.btn_sua.TabIndex = 15;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -192,6 +194,7 @@
             this.btn_timkiem.TabIndex = 17;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // txt_masp
             // 
