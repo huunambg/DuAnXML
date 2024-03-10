@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QL_HoaDon>
+	<HoaDon MaHD="HD001">
+		<NgayDat>2024-03-09</NgayDat>
+		<MaVN>VN001</MaVN>
+		<MaKH>KH001</MaKH>
+		<ChiTietHD MaCTHD="CTHD001">
+			<TenSP>Điện thoại di động</TenSP>
+			<SoLuong>2</SoLuong>
+			<GiaBan>5000000</GiaBan>
+			<ThanhTien>10000000</ThanhTien>
+		</ChiTietHD>
+		<ChiTietHD MaCTHD="CTHD002">
+			<TenSP>Laptop</TenSP>
+			<SoLuong>1</SoLuong>
+			<GiaBan>15000000</GiaBan>
+			<ThanhTien>15000000</ThanhTien>
+		</ChiTietHD>
+	</HoaDon>
+	<HoaDon MaHD="HD002">
+		<NgayDat>2024-03-10</NgayDat>
+		<MaVN>VN002</MaVN>
+		<MaKH>KH002</MaKH>
+		<ChiTietHD MaCTHD="CTHD003">
+			<TenSP>Máy ảnh</TenSP>
+			<SoLuong>3</SoLuong>
+			<GiaBan>8000000</GiaBan>
+			<ThanhTien>24000000</ThanhTien>
+		</ChiTietHD>
+	</HoaDon>
+</QL_HoaDon>

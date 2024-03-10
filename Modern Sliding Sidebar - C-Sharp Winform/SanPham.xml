@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<QL_SanPham>
+    <SanPham MaSP="SP001">
+        <TenSP>Điện thoại di động</TenSP>
+        <Gia>5000000</Gia>
+        <SoLuongTon>50</SoLuongTon>
+        <NgaySX>2023-01-15</NgaySX>
+        <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP002">
+        <TenSP>Laptop</TenSP>
+        <Gia>15000000</Gia>
+        <SoLuongTon>20</SoLuongTon>
+        <NgaySX>2022-09-20</NgaySX>
+        <HanSD>2026-09-20</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP003">
+        <TenSP>Máy ảnh</TenSP>
+        <Gia>8000000</Gia>
+        <SoLuongTon>30</SoLuongTon>
+        <NgaySX>2023-05-10</NgaySX>
+        <HanSD>2027-05-10</HanSD>
+    </SanPham>
+</QL_SanPham>

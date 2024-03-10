@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QL_KhachHang>
+	<KhachHang MaKH="KH001">
+		<TenKH>Nguyen Van A</TenKH>
+		<DiaChi>123 Main Street, City</DiaChi>
+		<SDT>0123456789</SDT>
+	</KhachHang>
+	<KhachHang MaKH="KH002">
+		<TenKH>Tran Thi B</TenKH>
+		<DiaChi>456 Oak Avenue, Town</DiaChi>
+		<SDT>0987654321</SDT>
+	</KhachHang>
+	<KhachHang MaKH="KH003">
+		<TenKH>Le Van C</TenKH>
+		<DiaChi>789 Pine Road, Village</DiaChi>
+		<SDT>0123456789</SDT>
+	</KhachHang>
+</QL_KhachHang>

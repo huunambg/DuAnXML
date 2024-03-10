@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QL_NhanVien>
+	<NhanVien MaNV="NV001">
+		<TenNV>Tran Van X</TenNV>
+		<ChucVu>Quan ly</ChucVu>
+		<SDT>0123456789</SDT>
+		<DiaChi>456 Elm Street, City</DiaChi>
+	</NhanVien>
+	<NhanVien MaNV="NV002">
+		<TenNV>Nguyen Thi Y</TenNV>
+		<ChucVu>Nhan vien</ChucVu>
+		<SDT>0987654321</SDT>
+		<DiaChi>789 Maple Avenue, Town</DiaChi>
+	</NhanVien>
+	<NhanVien MaNV="NV003">
+		<TenNV>Le Van Z</TenNV>
+		<ChucVu>Nhan vien</ChucVu>
+		<SDT>0123456789</SDT>
+		<DiaChi>123 Oak Road, Village</DiaChi>
+	</NhanVien>
+</QL_NhanVien>
