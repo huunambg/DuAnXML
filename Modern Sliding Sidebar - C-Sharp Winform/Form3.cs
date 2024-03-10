@@ -21,5 +21,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
 
         }
+
+        private void txt_thanhtien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
