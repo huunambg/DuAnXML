@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -37,14 +39,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.txt_taikhoan = new Guna.UI.WinForms.GunaTextBox();
-            this.txt_matkhau = new Guna.UI.WinForms.GunaTextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.Close_Button = new Guna.UI.WinForms.GunaImageButton();
             this.btn_dangnhap = new Guna.UI.WinForms.GunaButton();
+            this.txt_taikhoan = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_matkhau = new Guna.UI.WinForms.GunaTextBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_dangki = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -53,6 +54,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btn_dangki);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.gunaButton2);
             this.panel2.Controls.Add(this.panel6);
@@ -65,131 +67,22 @@
             this.panel2.Controls.Add(this.txt_taikhoan);
             this.panel2.Controls.Add(this.txt_matkhau);
             this.panel2.Controls.Add(this.gunaButton3);
-            this.panel2.Location = new System.Drawing.Point(413, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(551, -1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(382, 457);
+            this.panel2.Size = new System.Drawing.Size(509, 562);
             this.panel2.TabIndex = 11;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(46, 233);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(293, 26);
-            this.panel6.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(0, 13);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Password";
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(46, 167);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(293, 29);
-            this.panel5.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(0, 14);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Username";
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.panel4.Location = new System.Drawing.Point(334, 142);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(48, 191);
-            this.panel4.TabIndex = 14;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 142);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(46, 191);
-            this.panel3.TabIndex = 13;
-            // 
-            // gunaCheckBox1
-            // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(46, 299);
-            this.gunaCheckBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(100, 20);
-            this.gunaCheckBox1.TabIndex = 0;
-            this.gunaCheckBox1.Text = "Nhớ mật khẩu";
-            // 
-            // txt_taikhoan
-            // 
-            this.txt_taikhoan.BaseColor = System.Drawing.Color.White;
-            this.txt_taikhoan.BorderColor = System.Drawing.Color.Silver;
-            this.txt_taikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_taikhoan.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_taikhoan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_taikhoan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_taikhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_taikhoan.Location = new System.Drawing.Point(38, 188);
-            this.txt_taikhoan.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_taikhoan.Name = "txt_taikhoan";
-            this.txt_taikhoan.PasswordChar = '\0';
-            this.txt_taikhoan.Size = new System.Drawing.Size(301, 41);
-            this.txt_taikhoan.TabIndex = 10;
-            // 
-            // txt_matkhau
-            // 
-            this.txt_matkhau.BaseColor = System.Drawing.Color.White;
-            this.txt_matkhau.BorderColor = System.Drawing.Color.Silver;
-            this.txt_matkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_matkhau.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_matkhau.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_matkhau.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_matkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_matkhau.Location = new System.Drawing.Point(38, 254);
-            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_matkhau.Name = "txt_matkhau";
-            this.txt_matkhau.PasswordChar = '\0';
-            this.txt_matkhau.Size = new System.Drawing.Size(301, 40);
-            this.txt_matkhau.TabIndex = 8;
             // 
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Location = new System.Drawing.Point(111, 10);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(148, 12);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(160, 84);
+            this.panel7.Size = new System.Drawing.Size(213, 103);
             this.panel7.TabIndex = 18;
             // 
             // gunaButton2
@@ -208,8 +101,8 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(314, 373);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton2.Location = new System.Drawing.Point(419, 459);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -217,9 +110,84 @@
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Transparent;
             this.gunaButton2.Radius = 28;
-            this.gunaButton2.Size = new System.Drawing.Size(67, 74);
+            this.gunaButton2.Size = new System.Drawing.Size(89, 91);
             this.gunaButton2.TabIndex = 16;
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(61, 287);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(391, 32);
+            this.panel6.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Location = new System.Drawing.Point(0, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Password";
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Location = new System.Drawing.Point(61, 206);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(391, 36);
+            this.panel5.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label2.Location = new System.Drawing.Point(0, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Username";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel4.Location = new System.Drawing.Point(445, 175);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(64, 235);
+            this.panel4.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 175);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(61, 235);
+            this.panel3.TabIndex = 13;
+            // 
+            // gunaCheckBox1
+            // 
+            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.Location = new System.Drawing.Point(61, 368);
+            this.gunaCheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaCheckBox1.Name = "gunaCheckBox1";
+            this.gunaCheckBox1.Size = new System.Drawing.Size(113, 20);
+            this.gunaCheckBox1.TabIndex = 0;
+            this.gunaCheckBox1.Text = "Nhớ mật khẩu";
             // 
             // Close_Button
             // 
@@ -228,11 +196,12 @@
             this.Close_Button.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Close_Button.Image = ((System.Drawing.Image)(resources.GetObject("Close_Button.Image")));
             this.Close_Button.ImageSize = new System.Drawing.Size(28, 28);
-            this.Close_Button.Location = new System.Drawing.Point(363, 3);
+            this.Close_Button.Location = new System.Drawing.Point(484, 4);
+            this.Close_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Close_Button.Name = "Close_Button";
             this.Close_Button.OnHoverImage = global::Modern_Sliding_Sidebar___C_Sharp_Winform.Properties.Resources.multiply_48px_____;
             this.Close_Button.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.Close_Button.Size = new System.Drawing.Size(14, 13);
+            this.Close_Button.Size = new System.Drawing.Size(19, 16);
             this.Close_Button.TabIndex = 12;
             this.Close_Button.Click += new System.EventHandler(this.Close_Button_Click);
             // 
@@ -252,8 +221,8 @@
             this.btn_dangnhap.ForeColor = System.Drawing.Color.White;
             this.btn_dangnhap.Image = null;
             this.btn_dangnhap.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_dangnhap.Location = new System.Drawing.Point(133, 323);
-            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_dangnhap.Location = new System.Drawing.Point(177, 398);
+            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_dangnhap.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -261,10 +230,42 @@
             this.btn_dangnhap.OnHoverImage = null;
             this.btn_dangnhap.OnPressedColor = System.Drawing.Color.Black;
             this.btn_dangnhap.Radius = 28;
-            this.btn_dangnhap.Size = new System.Drawing.Size(118, 41);
+            this.btn_dangnhap.Size = new System.Drawing.Size(157, 50);
             this.btn_dangnhap.TabIndex = 9;
             this.btn_dangnhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
+            // 
+            // txt_taikhoan
+            // 
+            this.txt_taikhoan.BaseColor = System.Drawing.Color.White;
+            this.txt_taikhoan.BorderColor = System.Drawing.Color.Silver;
+            this.txt_taikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_taikhoan.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_taikhoan.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_taikhoan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_taikhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_taikhoan.Location = new System.Drawing.Point(51, 231);
+            this.txt_taikhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_taikhoan.Name = "txt_taikhoan";
+            this.txt_taikhoan.PasswordChar = '\0';
+            this.txt_taikhoan.Size = new System.Drawing.Size(401, 50);
+            this.txt_taikhoan.TabIndex = 10;
+            // 
+            // txt_matkhau
+            // 
+            this.txt_matkhau.BaseColor = System.Drawing.Color.White;
+            this.txt_matkhau.BorderColor = System.Drawing.Color.Silver;
+            this.txt_matkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_matkhau.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_matkhau.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_matkhau.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_matkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_matkhau.Location = new System.Drawing.Point(51, 313);
+            this.txt_matkhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_matkhau.Name = "txt_matkhau";
+            this.txt_matkhau.PasswordChar = '\0';
+            this.txt_matkhau.Size = new System.Drawing.Size(401, 49);
+            this.txt_matkhau.TabIndex = 8;
             // 
             // gunaButton3
             // 
@@ -282,8 +283,8 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(2, 2);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton3.Location = new System.Drawing.Point(3, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -291,7 +292,7 @@
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Transparent;
             this.gunaButton3.Radius = 28;
-            this.gunaButton3.Size = new System.Drawing.Size(56, 67);
+            this.gunaButton3.Size = new System.Drawing.Size(75, 82);
             this.gunaButton3.TabIndex = 17;
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -300,19 +301,29 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(5, -8);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(7, -10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(426, 466);
+            this.panel1.Size = new System.Drawing.Size(568, 574);
             this.panel1.TabIndex = 10;
+            // 
+            // btn_dangki
+            // 
+            this.btn_dangki.Location = new System.Drawing.Point(205, 520);
+            this.btn_dangki.Name = "btn_dangki";
+            this.btn_dangki.Size = new System.Drawing.Size(75, 23);
+            this.btn_dangki.TabIndex = 19;
+            this.btn_dangki.Text = "Đăng kí";
+            this.btn_dangki.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -344,5 +355,6 @@
         private Guna.UI.WinForms.GunaTextBox txt_matkhau;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_dangki;
     }
 }

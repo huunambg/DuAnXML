@@ -16,7 +16,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Form_DangKi());
         }
     }
 }

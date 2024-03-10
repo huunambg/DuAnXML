@@ -13,7 +13,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Form5 : Form
     {
         XmlElement ql_nhanvien;
-        String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
+        String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
         private String ma_nv;
         XmlDocument doc = new XmlDocument();
 
