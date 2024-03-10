@@ -21,7 +21,6 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         public Form4()
         {
             InitializeComponent();
-            this.ma_kh = ma_kh;
         }
         private void Show(DataGridView dgv)
         {
