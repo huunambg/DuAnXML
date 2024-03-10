@@ -32,14 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Elipse_Form = new Guna.UI.WinForms.GunaElipse(this.components);
             this.SideBar = new Guna.UI.WinForms.GunaPanel();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel7 = new Guna.UI.WinForms.GunaPanel();
+            this.Help_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel6 = new Guna.UI.WinForms.GunaPanel();
+            this.About_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
+            this.Statistics_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
+            this.Customers_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
+            this.Orders_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.Home_Button = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel9 = new Guna.UI.WinForms.GunaPanel();
+            this.Menu_Button = new Guna.UI.WinForms.GunaButton();
             this.DragControl_Form = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.Timer_Sidebar_Menu = new System.Windows.Forms.Timer(this.components);
             this.Link_Github = new Guna.UI.WinForms.GunaLinkLabel();
@@ -49,14 +57,6 @@
             this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.Close_Button = new Guna.UI.WinForms.GunaImageButton();
-            this.Help_Button = new Guna.UI.WinForms.GunaButton();
-            this.About_Button = new Guna.UI.WinForms.GunaButton();
-            this.Statistics_Button = new Guna.UI.WinForms.GunaButton();
-            this.Customers_Button = new Guna.UI.WinForms.GunaButton();
-            this.Orders_Button = new Guna.UI.WinForms.GunaButton();
-            this.Home_Button = new Guna.UI.WinForms.GunaButton();
-            this.Menu_Button = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.SideBar.SuspendLayout();
             this.gunaPanel7.SuspendLayout();
             this.gunaPanel6.SuspendLayout();
@@ -94,6 +94,33 @@
             this.SideBar.Size = new System.Drawing.Size(289, 608);
             this.SideBar.TabIndex = 0;
             // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(9, 522);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.White;
+            this.gunaButton1.Size = new System.Drawing.Size(271, 49);
+            this.gunaButton1.TabIndex = 2;
+            this.gunaButton1.Text = "Đăng xuất";
+            this.gunaButton1.TextOffsetX = 15;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
             // gunaPanel7
             // 
             this.gunaPanel7.Controls.Add(this.Help_Button);
@@ -103,6 +130,32 @@
             this.gunaPanel7.Name = "gunaPanel7";
             this.gunaPanel7.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel7.TabIndex = 6;
+            // 
+            // Help_Button
+            // 
+            this.Help_Button.AnimationHoverSpeed = 0.07F;
+            this.Help_Button.AnimationSpeed = 0.03F;
+            this.Help_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Help_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Help_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Help_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Help_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Help_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Help_Button.ForeColor = System.Drawing.Color.White;
+            this.Help_Button.Image = ((System.Drawing.Image)(resources.GetObject("Help_Button.Image")));
+            this.Help_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Help_Button.Location = new System.Drawing.Point(9, 10);
+            this.Help_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Help_Button.Name = "Help_Button";
+            this.Help_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Help_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Help_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Help_Button.OnHoverImage = null;
+            this.Help_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Help_Button.Size = new System.Drawing.Size(271, 49);
+            this.Help_Button.TabIndex = 1;
+            this.Help_Button.Text = "Trợ giúp";
+            this.Help_Button.TextOffsetX = 15;
             // 
             // gunaPanel6
             // 
@@ -114,6 +167,33 @@
             this.gunaPanel6.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel6.TabIndex = 4;
             // 
+            // About_Button
+            // 
+            this.About_Button.AnimationHoverSpeed = 0.07F;
+            this.About_Button.AnimationSpeed = 0.03F;
+            this.About_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.About_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.About_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.About_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.About_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.About_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.About_Button.ForeColor = System.Drawing.Color.White;
+            this.About_Button.Image = ((System.Drawing.Image)(resources.GetObject("About_Button.Image")));
+            this.About_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.About_Button.Location = new System.Drawing.Point(9, 10);
+            this.About_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.About_Button.Name = "About_Button";
+            this.About_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.About_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.About_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.About_Button.OnHoverImage = null;
+            this.About_Button.OnPressedColor = System.Drawing.Color.White;
+            this.About_Button.Size = new System.Drawing.Size(271, 49);
+            this.About_Button.TabIndex = 1;
+            this.About_Button.Text = "About";
+            this.About_Button.TextOffsetX = 15;
+            this.About_Button.Click += new System.EventHandler(this.About_Button_Click);
+            // 
             // gunaPanel5
             // 
             this.gunaPanel5.Controls.Add(this.Statistics_Button);
@@ -123,6 +203,33 @@
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel5.TabIndex = 3;
+            // 
+            // Statistics_Button
+            // 
+            this.Statistics_Button.AnimationHoverSpeed = 0.07F;
+            this.Statistics_Button.AnimationSpeed = 0.03F;
+            this.Statistics_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Statistics_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Statistics_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Statistics_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Statistics_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Statistics_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Statistics_Button.ForeColor = System.Drawing.Color.White;
+            this.Statistics_Button.Image = ((System.Drawing.Image)(resources.GetObject("Statistics_Button.Image")));
+            this.Statistics_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Statistics_Button.Location = new System.Drawing.Point(9, 10);
+            this.Statistics_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Statistics_Button.Name = "Statistics_Button";
+            this.Statistics_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Statistics_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Statistics_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Statistics_Button.OnHoverImage = null;
+            this.Statistics_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Statistics_Button.Size = new System.Drawing.Size(271, 49);
+            this.Statistics_Button.TabIndex = 1;
+            this.Statistics_Button.Text = "Quản lý nhân viên";
+            this.Statistics_Button.TextOffsetX = 15;
+            this.Statistics_Button.Click += new System.EventHandler(this.Statistics_Button_Click);
             // 
             // gunaPanel8
             // 
@@ -134,6 +241,33 @@
             this.gunaPanel8.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel8.TabIndex = 5;
             // 
+            // Customers_Button
+            // 
+            this.Customers_Button.AnimationHoverSpeed = 0.07F;
+            this.Customers_Button.AnimationSpeed = 0.03F;
+            this.Customers_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Customers_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Customers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Customers_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Customers_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Customers_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Customers_Button.ForeColor = System.Drawing.Color.White;
+            this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
+            this.Customers_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Customers_Button.Location = new System.Drawing.Point(9, 10);
+            this.Customers_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Customers_Button.Name = "Customers_Button";
+            this.Customers_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Customers_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Customers_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Customers_Button.OnHoverImage = null;
+            this.Customers_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Customers_Button.Size = new System.Drawing.Size(271, 49);
+            this.Customers_Button.TabIndex = 1;
+            this.Customers_Button.Text = "Quản lý khách hàng";
+            this.Customers_Button.TextOffsetX = 15;
+            this.Customers_Button.Click += new System.EventHandler(this.Customers_Button_Click);
+            // 
             // gunaPanel4
             // 
             this.gunaPanel4.Controls.Add(this.Orders_Button);
@@ -144,6 +278,33 @@
             this.gunaPanel4.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel4.TabIndex = 2;
             // 
+            // Orders_Button
+            // 
+            this.Orders_Button.AnimationHoverSpeed = 0.07F;
+            this.Orders_Button.AnimationSpeed = 0.03F;
+            this.Orders_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Orders_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Orders_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Orders_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Orders_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Orders_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Orders_Button.ForeColor = System.Drawing.Color.White;
+            this.Orders_Button.Image = ((System.Drawing.Image)(resources.GetObject("Orders_Button.Image")));
+            this.Orders_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Orders_Button.Location = new System.Drawing.Point(9, 9);
+            this.Orders_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Orders_Button.Name = "Orders_Button";
+            this.Orders_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Orders_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Orders_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Orders_Button.OnHoverImage = null;
+            this.Orders_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Orders_Button.Size = new System.Drawing.Size(271, 49);
+            this.Orders_Button.TabIndex = 1;
+            this.Orders_Button.Text = "Quản lý hoá đơn";
+            this.Orders_Button.TextOffsetX = 15;
+            this.Orders_Button.Click += new System.EventHandler(this.Orders_Button_Click);
+            // 
             // gunaPanel3
             // 
             this.gunaPanel3.Controls.Add(this.Home_Button);
@@ -153,6 +314,33 @@
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(289, 68);
             this.gunaPanel3.TabIndex = 1;
+            // 
+            // Home_Button
+            // 
+            this.Home_Button.AnimationHoverSpeed = 0.07F;
+            this.Home_Button.AnimationSpeed = 0.03F;
+            this.Home_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Home_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Home_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Home_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Home_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Home_Button.ForeColor = System.Drawing.Color.White;
+            this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
+            this.Home_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Home_Button.Location = new System.Drawing.Point(9, 9);
+            this.Home_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Home_Button.Name = "Home_Button";
+            this.Home_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Home_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Home_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Home_Button.OnHoverImage = null;
+            this.Home_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Home_Button.Size = new System.Drawing.Size(271, 49);
+            this.Home_Button.TabIndex = 1;
+            this.Home_Button.Text = "Quản lý hàng hoá";
+            this.Home_Button.TextOffsetX = 15;
+            this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
             // gunaPanel2
             // 
@@ -172,6 +360,33 @@
             this.gunaPanel9.Name = "gunaPanel9";
             this.gunaPanel9.Size = new System.Drawing.Size(284, 84);
             this.gunaPanel9.TabIndex = 2;
+            // 
+            // Menu_Button
+            // 
+            this.Menu_Button.AnimationHoverSpeed = 0.07F;
+            this.Menu_Button.AnimationSpeed = 0.03F;
+            this.Menu_Button.BaseColor = System.Drawing.Color.Transparent;
+            this.Menu_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Menu_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Menu_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.Menu_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Menu_Button.ForeColor = System.Drawing.Color.White;
+            this.Menu_Button.Image = ((System.Drawing.Image)(resources.GetObject("Menu_Button.Image")));
+            this.Menu_Button.ImageSize = new System.Drawing.Size(20, 20);
+            this.Menu_Button.Location = new System.Drawing.Point(9, 17);
+            this.Menu_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Menu_Button.Name = "Menu_Button";
+            this.Menu_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Menu_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Menu_Button.OnHoverForeColor = System.Drawing.Color.Silver;
+            this.Menu_Button.OnHoverImage = null;
+            this.Menu_Button.OnPressedColor = System.Drawing.Color.White;
+            this.Menu_Button.Size = new System.Drawing.Size(271, 49);
+            this.Menu_Button.TabIndex = 1;
+            this.Menu_Button.Text = "Menu";
+            this.Menu_Button.TextOffsetX = 15;
+            this.Menu_Button.Click += new System.EventHandler(this.Menu_Button_Click);
             // 
             // DragControl_Form
             // 
@@ -289,221 +504,6 @@
             this.Close_Button.Size = new System.Drawing.Size(47, 43);
             this.Close_Button.TabIndex = 1;
             this.Close_Button.Click += new System.EventHandler(this.Close_Button_Click);
-            // 
-            // Help_Button
-            // 
-            this.Help_Button.AnimationHoverSpeed = 0.07F;
-            this.Help_Button.AnimationSpeed = 0.03F;
-            this.Help_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Help_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Help_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Help_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Help_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Help_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Help_Button.ForeColor = System.Drawing.Color.White;
-            this.Help_Button.Image = ((System.Drawing.Image)(resources.GetObject("Help_Button.Image")));
-            this.Help_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Help_Button.Location = new System.Drawing.Point(9, 10);
-            this.Help_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Help_Button.Name = "Help_Button";
-            this.Help_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Help_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Help_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Help_Button.OnHoverImage = null;
-            this.Help_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Help_Button.Size = new System.Drawing.Size(271, 49);
-            this.Help_Button.TabIndex = 1;
-            this.Help_Button.Text = "Trợ giúp";
-            this.Help_Button.TextOffsetX = 15;
-            // 
-            // About_Button
-            // 
-            this.About_Button.AnimationHoverSpeed = 0.07F;
-            this.About_Button.AnimationSpeed = 0.03F;
-            this.About_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.About_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.About_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.About_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.About_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.About_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.About_Button.ForeColor = System.Drawing.Color.White;
-            this.About_Button.Image = ((System.Drawing.Image)(resources.GetObject("About_Button.Image")));
-            this.About_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.About_Button.Location = new System.Drawing.Point(9, 10);
-            this.About_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.About_Button.Name = "About_Button";
-            this.About_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.About_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.About_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.About_Button.OnHoverImage = null;
-            this.About_Button.OnPressedColor = System.Drawing.Color.White;
-            this.About_Button.Size = new System.Drawing.Size(271, 49);
-            this.About_Button.TabIndex = 1;
-            this.About_Button.Text = "About";
-            this.About_Button.TextOffsetX = 15;
-            this.About_Button.Click += new System.EventHandler(this.About_Button_Click);
-            // 
-            // Statistics_Button
-            // 
-            this.Statistics_Button.AnimationHoverSpeed = 0.07F;
-            this.Statistics_Button.AnimationSpeed = 0.03F;
-            this.Statistics_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Statistics_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Statistics_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Statistics_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Statistics_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Statistics_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Statistics_Button.ForeColor = System.Drawing.Color.White;
-            this.Statistics_Button.Image = ((System.Drawing.Image)(resources.GetObject("Statistics_Button.Image")));
-            this.Statistics_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Statistics_Button.Location = new System.Drawing.Point(9, 10);
-            this.Statistics_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Statistics_Button.Name = "Statistics_Button";
-            this.Statistics_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Statistics_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Statistics_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Statistics_Button.OnHoverImage = null;
-            this.Statistics_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Statistics_Button.Size = new System.Drawing.Size(271, 49);
-            this.Statistics_Button.TabIndex = 1;
-            this.Statistics_Button.Text = "Quản lý nhân viên";
-            this.Statistics_Button.TextOffsetX = 15;
-            this.Statistics_Button.Click += new System.EventHandler(this.Statistics_Button_Click);
-            // 
-            // Customers_Button
-            // 
-            this.Customers_Button.AnimationHoverSpeed = 0.07F;
-            this.Customers_Button.AnimationSpeed = 0.03F;
-            this.Customers_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Customers_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Customers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Customers_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Customers_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Customers_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Customers_Button.ForeColor = System.Drawing.Color.White;
-            this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
-            this.Customers_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Customers_Button.Location = new System.Drawing.Point(9, 10);
-            this.Customers_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Customers_Button.Name = "Customers_Button";
-            this.Customers_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Customers_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Customers_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Customers_Button.OnHoverImage = null;
-            this.Customers_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Customers_Button.Size = new System.Drawing.Size(271, 49);
-            this.Customers_Button.TabIndex = 1;
-            this.Customers_Button.Text = "Quản lý khách hàng";
-            this.Customers_Button.TextOffsetX = 15;
-            this.Customers_Button.Click += new System.EventHandler(this.Customers_Button_Click);
-            // 
-            // Orders_Button
-            // 
-            this.Orders_Button.AnimationHoverSpeed = 0.07F;
-            this.Orders_Button.AnimationSpeed = 0.03F;
-            this.Orders_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Orders_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Orders_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Orders_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Orders_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Orders_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Orders_Button.ForeColor = System.Drawing.Color.White;
-            this.Orders_Button.Image = ((System.Drawing.Image)(resources.GetObject("Orders_Button.Image")));
-            this.Orders_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Orders_Button.Location = new System.Drawing.Point(9, 9);
-            this.Orders_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Orders_Button.Name = "Orders_Button";
-            this.Orders_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Orders_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Orders_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Orders_Button.OnHoverImage = null;
-            this.Orders_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Orders_Button.Size = new System.Drawing.Size(271, 49);
-            this.Orders_Button.TabIndex = 1;
-            this.Orders_Button.Text = "Quản lý hoá đơn";
-            this.Orders_Button.TextOffsetX = 15;
-            this.Orders_Button.Click += new System.EventHandler(this.Orders_Button_Click);
-            // 
-            // Home_Button
-            // 
-            this.Home_Button.AnimationHoverSpeed = 0.07F;
-            this.Home_Button.AnimationSpeed = 0.03F;
-            this.Home_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Home_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Home_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Home_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Home_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Home_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Home_Button.ForeColor = System.Drawing.Color.White;
-            this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
-            this.Home_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Home_Button.Location = new System.Drawing.Point(9, 9);
-            this.Home_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Home_Button.Name = "Home_Button";
-            this.Home_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Home_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Home_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Home_Button.OnHoverImage = null;
-            this.Home_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Home_Button.Size = new System.Drawing.Size(271, 49);
-            this.Home_Button.TabIndex = 1;
-            this.Home_Button.Text = "Quản lý hàng hoá";
-            this.Home_Button.TextOffsetX = 15;
-            this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
-            // 
-            // Menu_Button
-            // 
-            this.Menu_Button.AnimationHoverSpeed = 0.07F;
-            this.Menu_Button.AnimationSpeed = 0.03F;
-            this.Menu_Button.BaseColor = System.Drawing.Color.Transparent;
-            this.Menu_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Menu_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menu_Button.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Menu_Button.FocusedColor = System.Drawing.Color.Empty;
-            this.Menu_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Menu_Button.ForeColor = System.Drawing.Color.White;
-            this.Menu_Button.Image = ((System.Drawing.Image)(resources.GetObject("Menu_Button.Image")));
-            this.Menu_Button.ImageSize = new System.Drawing.Size(20, 20);
-            this.Menu_Button.Location = new System.Drawing.Point(9, 17);
-            this.Menu_Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Menu_Button.Name = "Menu_Button";
-            this.Menu_Button.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.Menu_Button.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Menu_Button.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.Menu_Button.OnHoverImage = null;
-            this.Menu_Button.OnPressedColor = System.Drawing.Color.White;
-            this.Menu_Button.Size = new System.Drawing.Size(271, 49);
-            this.Menu_Button.TabIndex = 1;
-            this.Menu_Button.Text = "Menu";
-            this.Menu_Button.TextOffsetX = 15;
-            this.Menu_Button.Click += new System.EventHandler(this.Menu_Button_Click);
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(9, 522);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Silver;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.White;
-            this.gunaButton1.Size = new System.Drawing.Size(271, 49);
-            this.gunaButton1.TabIndex = 2;
-            this.gunaButton1.Text = "Đăng xuất";
-            this.gunaButton1.TextOffsetX = 15;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // Form1
             // 
