@@ -42,8 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_makh = new Guna.UI.WinForms.GunaTextBox();
-            this.txt_manv = new Guna.UI.WinForms.GunaTextBox();
             this.txt_mahd = new Guna.UI.WinForms.GunaTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -56,6 +54,8 @@
             this.txt_thanhtien = new Guna.UI.WinForms.GunaTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_chitiethoadon)).BeginInit();
             this.SuspendLayout();
@@ -91,8 +91,8 @@
             // 
             // dgv_hoadon
             // 
-            this.dgv_hoadon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_hoadon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_hoadon.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -106,7 +106,7 @@
             // 
             // dgv_chitiethoadon
             // 
-            this.dgv_chitiethoadon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_chitiethoadon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_chitiethoadon.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dgv_chitiethoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -222,42 +222,6 @@
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 62;
             this.label1.Text = "Mã hoá đơn";
-            // 
-            // txt_makh
-            // 
-            this.txt_makh.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_makh.BackColor = System.Drawing.Color.Transparent;
-            this.txt_makh.BaseColor = System.Drawing.Color.White;
-            this.txt_makh.BorderColor = System.Drawing.Color.Silver;
-            this.txt_makh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_makh.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_makh.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_makh.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_makh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_makh.Location = new System.Drawing.Point(128, 169);
-            this.txt_makh.Name = "txt_makh";
-            this.txt_makh.PasswordChar = '\0';
-            this.txt_makh.Radius = 10;
-            this.txt_makh.Size = new System.Drawing.Size(197, 34);
-            this.txt_makh.TabIndex = 59;
-            // 
-            // txt_manv
-            // 
-            this.txt_manv.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_manv.BackColor = System.Drawing.Color.Transparent;
-            this.txt_manv.BaseColor = System.Drawing.Color.White;
-            this.txt_manv.BorderColor = System.Drawing.Color.Silver;
-            this.txt_manv.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_manv.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_manv.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_manv.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_manv.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_manv.Location = new System.Drawing.Point(128, 129);
-            this.txt_manv.Name = "txt_manv";
-            this.txt_manv.PasswordChar = '\0';
-            this.txt_manv.Radius = 10;
-            this.txt_manv.Size = new System.Drawing.Size(197, 34);
-            this.txt_manv.TabIndex = 58;
             // 
             // txt_mahd
             // 
@@ -441,12 +405,54 @@
             this.gunaDateTimePicker1.Text = "07/03/2024";
             this.gunaDateTimePicker1.Value = new System.DateTime(2024, 3, 7, 18, 9, 13, 272);
             // 
+            // gunaComboBox1
+            // 
+            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
+            this.gunaComboBox1.FormattingEnabled = true;
+            this.gunaComboBox1.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C"});
+            this.gunaComboBox1.Location = new System.Drawing.Point(128, 129);
+            this.gunaComboBox1.Name = "gunaComboBox1";
+            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox1.Size = new System.Drawing.Size(197, 31);
+            this.gunaComboBox1.TabIndex = 81;
+            // 
+            // gunaComboBox2
+            // 
+            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
+            this.gunaComboBox2.FormattingEnabled = true;
+            this.gunaComboBox2.Location = new System.Drawing.Point(128, 170);
+            this.gunaComboBox2.Name = "gunaComboBox2";
+            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox2.Size = new System.Drawing.Size(197, 31);
+            this.gunaComboBox2.TabIndex = 82;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1372, 700);
+            this.Controls.Add(this.gunaComboBox2);
+            this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -462,8 +468,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_makh);
-            this.Controls.Add(this.txt_manv);
             this.Controls.Add(this.txt_mahd);
             this.Controls.Add(this.btn_xoahd);
             this.Controls.Add(this.btn_suahd);
@@ -500,8 +504,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox txt_makh;
-        private Guna.UI.WinForms.GunaTextBox txt_manv;
         private Guna.UI.WinForms.GunaTextBox txt_mahd;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -514,5 +516,7 @@
         private Guna.UI.WinForms.GunaTextBox txt_thanhtien;
         private System.Windows.Forms.Label label8;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
     }
 }
