@@ -37,6 +37,12 @@
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.txt_timkiemnv = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_nv = new System.Windows.Forms.DataGridView();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
@@ -44,12 +50,6 @@
             this.txt_sdt = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_diachi = new Guna.UI.WinForms.GunaTextBox();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,9 +57,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 136);
+            this.label3.Location = new System.Drawing.Point(5, 110);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 16);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 45;
             this.label3.Text = "Chức vụ";
             // 
@@ -67,9 +68,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 96);
+            this.label2.Location = new System.Drawing.Point(5, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 44;
             this.label2.Text = "Tên nhân viên";
             // 
@@ -77,9 +79,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 56);
+            this.label1.Location = new System.Drawing.Point(5, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 16);
+            this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 43;
             this.label1.Text = "Mã nhân viên";
             // 
@@ -94,11 +97,12 @@
             this.txt_chucvu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_chucvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_chucvu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_chucvu.Location = new System.Drawing.Point(123, 127);
+            this.txt_chucvu.Location = new System.Drawing.Point(92, 103);
+            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_chucvu.Name = "txt_chucvu";
             this.txt_chucvu.PasswordChar = '\0';
             this.txt_chucvu.Radius = 10;
-            this.txt_chucvu.Size = new System.Drawing.Size(197, 34);
+            this.txt_chucvu.Size = new System.Drawing.Size(148, 28);
             this.txt_chucvu.TabIndex = 39;
             // 
             // txt_tennv
@@ -112,11 +116,12 @@
             this.txt_tennv.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_tennv.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_tennv.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_tennv.Location = new System.Drawing.Point(123, 87);
+            this.txt_tennv.Location = new System.Drawing.Point(92, 71);
+            this.txt_tennv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_tennv.Name = "txt_tennv";
             this.txt_tennv.PasswordChar = '\0';
             this.txt_tennv.Radius = 10;
-            this.txt_tennv.Size = new System.Drawing.Size(197, 34);
+            this.txt_tennv.Size = new System.Drawing.Size(148, 28);
             this.txt_tennv.TabIndex = 38;
             // 
             // txt_manv
@@ -130,20 +135,22 @@
             this.txt_manv.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_manv.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_manv.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_manv.Location = new System.Drawing.Point(123, 47);
+            this.txt_manv.Location = new System.Drawing.Point(92, 38);
+            this.txt_manv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_manv.Name = "txt_manv";
             this.txt_manv.PasswordChar = '\0';
             this.txt_manv.Radius = 10;
-            this.txt_manv.Size = new System.Drawing.Size(197, 34);
+            this.txt_manv.Size = new System.Drawing.Size(148, 28);
             this.txt_manv.TabIndex = 37;
             // 
             // btn_timkiem
             // 
             this.btn_timkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_timkiem.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_timkiem.Location = new System.Drawing.Point(1233, 7);
+            this.btn_timkiem.Location = new System.Drawing.Point(925, 6);
+            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(127, 34);
+            this.btn_timkiem.Size = new System.Drawing.Size(95, 28);
             this.btn_timkiem.TabIndex = 36;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
@@ -159,11 +166,12 @@
             this.txt_timkiemnv.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_timkiemnv.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_timkiemnv.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_timkiemnv.Location = new System.Drawing.Point(1030, 7);
+            this.txt_timkiemnv.Location = new System.Drawing.Point(772, 6);
+            this.txt_timkiemnv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_timkiemnv.Name = "txt_timkiemnv";
             this.txt_timkiemnv.PasswordChar = '\0';
             this.txt_timkiemnv.Radius = 10;
-            this.txt_timkiemnv.Size = new System.Drawing.Size(197, 34);
+            this.txt_timkiemnv.Size = new System.Drawing.Size(148, 28);
             this.txt_timkiemnv.TabIndex = 32;
             // 
             // dgv_nv
@@ -183,102 +191,14 @@
             this.ChucVu,
             this.SDT,
             this.DiaChi});
-            this.dgv_nv.Location = new System.Drawing.Point(348, 47);
+            this.dgv_nv.Location = new System.Drawing.Point(261, 38);
+            this.dgv_nv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_nv.Name = "dgv_nv";
             this.dgv_nv.RowHeadersWidth = 51;
             this.dgv_nv.RowTemplate.Height = 24;
-            this.dgv_nv.Size = new System.Drawing.Size(1012, 641);
+            this.dgv_nv.Size = new System.Drawing.Size(759, 521);
             this.dgv_nv.TabIndex = 31;
             this.dgv_nv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nv_CellClick);
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_xoa.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_xoa.Location = new System.Drawing.Point(30, 634);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(269, 52);
-            this.btn_xoa.TabIndex = 51;
-            this.btn_xoa.Text = "Xoá";
-            this.btn_xoa.UseVisualStyleBackColor = false;
-            // 
-            // btn_sua
-            // 
-            this.btn_sua.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_sua.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_sua.Location = new System.Drawing.Point(30, 576);
-            this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(269, 52);
-            this.btn_sua.TabIndex = 50;
-            this.btn_sua.Text = "Sửa";
-            this.btn_sua.UseVisualStyleBackColor = false;
-            // 
-            // btn_them
-            // 
-            this.btn_them.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_them.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_them.Location = new System.Drawing.Point(30, 518);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(269, 52);
-            this.btn_them.TabIndex = 49;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 176);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 16);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "SDT";
-            // 
-            // txt_sdt
-            // 
-            this.txt_sdt.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_sdt.BackColor = System.Drawing.Color.Transparent;
-            this.txt_sdt.BaseColor = System.Drawing.Color.White;
-            this.txt_sdt.BorderColor = System.Drawing.Color.Silver;
-            this.txt_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_sdt.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_sdt.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_sdt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_sdt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_sdt.Location = new System.Drawing.Point(123, 167);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.PasswordChar = '\0';
-            this.txt_sdt.Radius = 10;
-            this.txt_sdt.Size = new System.Drawing.Size(197, 34);
-            this.txt_sdt.TabIndex = 52;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 16);
-            this.label5.TabIndex = 55;
-            this.label5.Text = "Địa chỉ";
-            // 
-            // txt_diachi
-            // 
-            this.txt_diachi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_diachi.BackColor = System.Drawing.Color.Transparent;
-            this.txt_diachi.BaseColor = System.Drawing.Color.White;
-            this.txt_diachi.BorderColor = System.Drawing.Color.Silver;
-            this.txt_diachi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_diachi.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_diachi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_diachi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_diachi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_diachi.Location = new System.Drawing.Point(123, 207);
-            this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.PasswordChar = '\0';
-            this.txt_diachi.Radius = 10;
-            this.txt_diachi.Size = new System.Drawing.Size(197, 34);
-            this.txt_diachi.TabIndex = 54;
             // 
             // MaNV
             // 
@@ -316,12 +236,111 @@
             this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
             // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_xoa.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_xoa.Location = new System.Drawing.Point(22, 515);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(202, 42);
+            this.btn_xoa.TabIndex = 51;
+            this.btn_xoa.Text = "Xoá";
+            this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_sua.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_sua.Location = new System.Drawing.Point(22, 468);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(202, 42);
+            this.btn_sua.TabIndex = 50;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_them.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_them.Location = new System.Drawing.Point(22, 421);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(202, 42);
+            this.btn_them.TabIndex = 49;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 143);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "SDT";
+            // 
+            // txt_sdt
+            // 
+            this.txt_sdt.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_sdt.BackColor = System.Drawing.Color.Transparent;
+            this.txt_sdt.BaseColor = System.Drawing.Color.White;
+            this.txt_sdt.BorderColor = System.Drawing.Color.Silver;
+            this.txt_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_sdt.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_sdt.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_sdt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_sdt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_sdt.Location = new System.Drawing.Point(92, 136);
+            this.txt_sdt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.PasswordChar = '\0';
+            this.txt_sdt.Radius = 10;
+            this.txt_sdt.Size = new System.Drawing.Size(148, 28);
+            this.txt_sdt.TabIndex = 52;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(5, 176);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Địa chỉ";
+            // 
+            // txt_diachi
+            // 
+            this.txt_diachi.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_diachi.BackColor = System.Drawing.Color.Transparent;
+            this.txt_diachi.BaseColor = System.Drawing.Color.White;
+            this.txt_diachi.BorderColor = System.Drawing.Color.Silver;
+            this.txt_diachi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_diachi.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_diachi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_diachi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_diachi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_diachi.Location = new System.Drawing.Point(92, 168);
+            this.txt_diachi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_diachi.Name = "txt_diachi";
+            this.txt_diachi.PasswordChar = '\0';
+            this.txt_diachi.Radius = 10;
+            this.txt_diachi.Size = new System.Drawing.Size(148, 28);
+            this.txt_diachi.TabIndex = 54;
+            // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1372, 700);
+            this.ClientSize = new System.Drawing.Size(1029, 569);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_diachi);
             this.Controls.Add(this.label4);
@@ -339,6 +358,7 @@
             this.Controls.Add(this.txt_timkiemnv);
             this.Controls.Add(this.dgv_nv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form5_Load);

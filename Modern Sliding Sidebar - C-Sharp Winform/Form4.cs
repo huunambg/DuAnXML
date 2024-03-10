@@ -13,20 +13,26 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 {
     public partial class Form4 : Form
     {
-        String namefile = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
+        string id_taikhoan;
+        String namefile = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
         XmlDocument doc = new XmlDocument();
         XmlElement ql_kh;
         private string ma_kh;
 
-        public Form4()
+        public Form4(string id_taikhoan)
         {
             InitializeComponent();
+            this.id_taikhoan = id_taikhoan;
         }
         private void Show(DataGridView dgv)
         {
+            dgv.Rows.Clear();
             doc.Load(namefile);
             ql_kh = doc.DocumentElement;
-            XmlNodeList ds = ql_kh.SelectNodes("KhachHang");
+
+            XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
             int sd = 0;
             int serialNumber = 1;
             foreach (XmlNode node in ds)
@@ -51,17 +57,32 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         }
         private void btn_them_Click(object sender, EventArgs e)
         {
+            doc.Load(namefile);
+            ql_kh = doc.DocumentElement;
 
+            XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
+            doc.Load(namefile);
+            ql_kh = doc.DocumentElement;
 
+            XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
+            doc.Load(namefile);
+            ql_kh = doc.DocumentElement;
 
+            XmlNode DS_KhachHang = ql_kh.SelectSingleNode("DS_KhachHang[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_KhachHang.SelectNodes("KhachHang");
         }
 
         private void dgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)

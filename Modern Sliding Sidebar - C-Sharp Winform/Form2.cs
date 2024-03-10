@@ -16,7 +16,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         string id_taikhoan;
         XmlDocument doc = new XmlDocument();
-        String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
+        String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
         XmlElement ql_sanpham;
         
         private void Show(DataGridView dgv)

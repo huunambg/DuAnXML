@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,17 +13,20 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 {
     public partial class Form5 : Form
     {
+        string id_taikhoan;
         XmlElement ql_nhanvien;
-        String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
-        private String ma_nv;
+        String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
         XmlDocument doc = new XmlDocument();
 
         
         public void show(DataGridView dgv)
         {
+           dgv.Rows.Clear();
             doc.Load(filename);
             ql_nhanvien = doc.DocumentElement;
-            XmlNodeList ds = ql_nhanvien.SelectNodes("NhanVien");
+            XmlNode DS_NhanVien = ql_nhanvien.SelectSingleNode("DS_NhanVien[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_NhanVien.SelectNodes("NhanVien");
             int sd = 0;
             int serialNumber = 1;
             foreach (XmlNode node in ds)
@@ -42,15 +46,36 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
             show(dgv_nv);
         }
-        public Form5()
+        public Form5(string id_taikhoan)
         {
             InitializeComponent();
-            this.ma_nv = ma_nv;
+            this.id_taikhoan = id_taikhoan;
         }
 
         private void dgv_nv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+            doc.Load(filename);
+            ql_nhanvien = doc.DocumentElement;
+            XmlNode DS_NhanVien = ql_nhanvien.SelectSingleNode("DS_NhanVien[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            doc.Load(filename);
+            ql_nhanvien = doc.DocumentElement;
+            XmlNode DS_NhanVien = ql_nhanvien.SelectSingleNode("DS_NhanVien[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            doc.Load(filename);
+            ql_nhanvien = doc.DocumentElement;
+            XmlNode DS_NhanVien = ql_nhanvien.SelectSingleNode("DS_NhanVien[Id_TaiKhoan ='" + this.id_taikhoan + "']");
         }
     }
 }

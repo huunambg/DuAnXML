@@ -124,7 +124,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void Customers_Button_Click(object sender, EventArgs e)
         {
-            Form4 f = new Form4();
+            Form4 f = new Form4(id_taikhoan);
             f.TopLevel = false;
             f.Size = gunaElipsePanel1.Size; // Set size of the new form to match PanelMain
             gunaElipsePanel1.Controls.Clear();
@@ -136,7 +136,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void Statistics_Button_Click(object sender, EventArgs e)
         {
-            Form5 f = new Form5();
+            Form5 f = new Form5(id_taikhoan);
             f.TopLevel = false;
             f.Size = gunaElipsePanel1.Size; // Set size of the new form to match PanelMain
             gunaElipsePanel1.Controls.Clear();

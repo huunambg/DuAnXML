@@ -14,7 +14,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Login : Form
     {
 
-        string fileName = @"D:\zKiemlongJr\XML\BaoCaoXML_Nhom3\Modern Sliding Sidebar - C-Sharp Winform\TaiKhoan.xml";
+        string fileName = @"D:\\Soure_Code\\Window\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\TaiKhoan.xml";
         XmlDocument doc = new XmlDocument();
         XmlElement ql_taikhoan;
 
