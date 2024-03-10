@@ -35,7 +35,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             {
                 if (check_tk.SelectSingleNode("MatKhau").InnerText == txt_matkhau.Text)
                 {
-                    Form1 f = new Form1();
+                    Form1 f = new Form1(check_tk.SelectSingleNode("@id_TaiKhoan").Value.ToString());
                     f.Show();
                     this.Hide();
                     MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

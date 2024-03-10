@@ -13,7 +13,8 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 {
     public partial class Form2 : Form
     {
-        String ma_sp;
+
+        string id_taikhoan;
         XmlDocument doc = new XmlDocument();
         String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
         XmlElement ql_sanpham;
@@ -22,7 +23,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
             doc.Load(filename);
             ql_sanpham = doc.DocumentElement;
-            XmlNodeList ds = ql_sanpham.SelectNodes("SanPham");
+           
+
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+            XmlNodeList ds = DS_SanPham.SelectNodes("SanPham");
             int sd = 0;
             int serialNumber = 1;
             foreach (XmlNode node in ds)
@@ -39,10 +44,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
                 serialNumber++;
             }
         }
-        public Form2()
+        public Form2(string id_taikhoan)
         {
             InitializeComponent();
-            this.ma_sp = ma_sp;
+            this.id_taikhoan = id_taikhoan;
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -52,6 +58,16 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void dgv_sp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+
+            doc.Load(filename);
+            ql_sanpham = doc.DocumentElement;
+            XmlNode DS_SanPham = ql_sanpham.SelectSingleNode("DS_SanPham[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
 
         }
     }
