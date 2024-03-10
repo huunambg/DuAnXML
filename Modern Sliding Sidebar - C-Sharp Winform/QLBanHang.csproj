@@ -169,6 +169,7 @@
     <Content Include="KhachHang.xml" />
     <Content Include="NhanVien.xml" />
     <Content Include="SanPham.xml" />
+    <Content Include="TaiKhoan.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
