@@ -32,6 +32,9 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private List<string> dsSP = new List<string>();
         private List<string> dsKH= new List<string>();
+
+        string mahoadon = "", masp = "";
+
         public Form3(string id_taikhoan)
         {
             InitializeComponent();
@@ -45,6 +48,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             if (dgv_hoadon.Rows[index].Cells[1].Value != null)
             {
                 showChitiet( dgv_hoadon.Rows[index].Cells[1].Value.ToString());
+                mahoadon = dgv_hoadon.Rows[index].Cells[1].Value.ToString();
             }
 
            
@@ -98,6 +102,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
             int sd = 0;
             int serialNumber = 1;
+            int tt = 0;
             foreach (XmlNode node in ds)
             {
 
@@ -110,7 +115,10 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
                 dgv_chitiethoadon.Rows[sd].Cells[5].Value = node.SelectSingleNode("ThanhTien").InnerText;
                 sd++;
                 serialNumber++;
+                tt += int.Parse(node.SelectSingleNode("ThanhTien").InnerText);
             }
+
+            txt_tongtien.Text = tt.ToString()+"VND";
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -134,6 +142,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             txt_mahd.Text = maHD;
             int sd = 0;
             int serialNumber = 1;
+  
             foreach (XmlNode node in ds)
             {
 
@@ -145,6 +154,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
                 dgv.Rows[sd].Cells[4].Value = node.SelectSingleNode("MaKH").InnerText;
                 sd++;
                 serialNumber++;
+
             }
 
         }
@@ -312,6 +322,249 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void txt_makh_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_xoahd_Click(object sender, EventArgs e)
+        {
+            delete();
+        }
+
+
+        void delete()
+        {
+
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa hóa đơn", "Xóa hóa đơn", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                doc.Load(namefile);
+                ql_hoadon = doc.DocumentElement;
+
+                XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+                XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + this.mahoadon + "']");
+
+                DS_HoaDon.RemoveChild(HoaDon);
+
+                doc.Save(namefile);
+
+                show(dgv_hoadon);
+            }
+            else
+            {
+
+            }
+
+        }
+
+        private void btn_themcthd_Click(object sender, EventArgs e)
+        {
+            if (mahoadon != "" || txt_tensp2.Text.Length > 0)
+            {
+                dgv_chitiethoadon.Rows.Clear();
+                doc.Load(namefile);
+                ql_hoadon = doc.DocumentElement;
+
+                XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+
+                XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
+
+
+                XmlNode SanPham = doc.CreateElement("SanPham");
+
+
+                XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
+                MaSanPham.Value = txt_cthd.Text;
+                SanPham.Attributes.Append(MaSanPham);
+
+                XmlElement TenSP = doc.CreateElement("TenSP");
+                TenSP.InnerText = txt_tensp2.Text;
+                SanPham.AppendChild(TenSP);
+
+                XmlElement SoLuong = doc.CreateElement("SoLuong");
+                SoLuong.InnerText = txt_soluong.Text;
+                SanPham.AppendChild(SoLuong);
+
+                XmlElement GiaBan = doc.CreateElement("GiaBan");
+                GiaBan.InnerText = txt_giaban.Text;
+                SanPham.AppendChild(GiaBan);
+
+
+                XmlElement ThanhTien = doc.CreateElement("ThanhTien");
+                ThanhTien.InnerText = txt_thanhtien.Text;
+                SanPham.AppendChild(ThanhTien);
+
+                HoaDon.AppendChild(SanPham);
+
+                doc.Save(namefile);
+
+                showChitiet(mahoadon);
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
+            }
+        }
+
+        private void btn_suacthd_Click(object sender, EventArgs e)
+        {
+            if (mahoadon != "" || txt_tensp2.Text.Length > 0)
+            {
+                dgv_chitiethoadon.Rows.Clear();
+                doc.Load(namefile);
+                ql_hoadon = doc.DocumentElement;
+
+                XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+
+                XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
+
+
+
+                XmlNode SanPhamCu = HoaDon.SelectSingleNode("SanPham[@MaSanPham ='" + masp + "']");
+
+
+
+                XmlNode SanPham = doc.CreateElement("SanPham");
+
+
+                XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
+                MaSanPham.Value = txt_cthd.Text;
+                SanPham.Attributes.Append(MaSanPham);
+
+                XmlElement TenSP = doc.CreateElement("TenSP");
+                TenSP.InnerText = txt_tensp2.Text;
+                SanPham.AppendChild(TenSP);
+
+                XmlElement SoLuong = doc.CreateElement("SoLuong");
+                SoLuong.InnerText = txt_soluong.Text;
+                SanPham.AppendChild(SoLuong);
+
+                XmlElement GiaBan = doc.CreateElement("GiaBan");
+                GiaBan.InnerText = txt_giaban.Text;
+                SanPham.AppendChild(GiaBan);
+
+
+                XmlElement ThanhTien = doc.CreateElement("ThanhTien");
+                ThanhTien.InnerText = txt_thanhtien.Text;
+                SanPham.AppendChild(ThanhTien);
+
+                HoaDon.ReplaceChild(SanPham,SanPhamCu);
+
+                doc.Save(namefile);
+
+                showChitiet(mahoadon);
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
+            }
+        }
+
+        private void btn_xoacthd_Click(object sender, EventArgs e)
+        {
+            dgv_chitiethoadon.Rows.Clear();
+            doc.Load(namefile);
+            ql_hoadon = doc.DocumentElement;
+
+            XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+
+            XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
+
+
+
+            XmlNode SanPhamCu = HoaDon.SelectSingleNode("SanPham[@MaSanPham ='" + masp + "']");
+
+
+
+            HoaDon.RemoveChild( SanPhamCu);
+
+            doc.Save(namefile);
+
+            showChitiet(mahoadon);
+        }
+
+        private void btn_timkiem_Click(object sender, EventArgs e)
+        {
+            if (txt_timkiemhd.Text.Length == 0)
+            {
+                dgv_hoadon.Rows.Clear();
+                doc.Load(namefile);
+                ql_hoadon = doc.DocumentElement;
+
+                XmlNode DS_KhachHang = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+                XmlNodeList ds = DS_KhachHang.SelectNodes("HoaDon");
+                string maHD = "HD" + (ds.Count + 1).ToString();
+                txt_mahd.Text = maHD;
+                int sd = 0;
+                int serialNumber = 1;
+                foreach (XmlNode node in ds)
+                {
+
+                    dgv_hoadon.Rows.Add();
+                    dgv_hoadon.Rows[sd].Cells[0].Value = serialNumber.ToString();
+                    dgv_hoadon.Rows[sd].Cells[1].Value = node.SelectSingleNode("@MaHD").Value;
+                    dgv_hoadon.Rows[sd].Cells[2].Value = node.SelectSingleNode("NgayDat").InnerText;
+                    dgv_hoadon.Rows[sd].Cells[3].Value = node.SelectSingleNode("MaNV").InnerText;
+                    dgv_hoadon.Rows[sd].Cells[4].Value = node.SelectSingleNode("MaKH").InnerText;
+                    sd++;
+                    serialNumber++;
+                }
+            }
+            else
+            {
+                dgv_hoadon.Rows.Clear();
+                doc.Load(namefile);
+                ql_hoadon = doc.DocumentElement;
+
+                XmlNode DS_KhachHang = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+
+                XmlNodeList ds = DS_KhachHang.SelectNodes("HoaDon");
+                string maHD = "HD" + (ds.Count + 1).ToString();
+                txt_mahd.Text = maHD;
+                int sd = 0;
+                int serialNumber = 1;
+                foreach (XmlNode node in ds)
+                {
+
+                    if (node.SelectSingleNode("@MaHD").Value == txt_timkiemhd.Text)
+                    {
+                        dgv_hoadon.Rows.Add();
+                        dgv_hoadon.Rows[sd].Cells[0].Value = serialNumber.ToString();
+                        dgv_hoadon.Rows[sd].Cells[1].Value = node.SelectSingleNode("@MaHD").Value;
+                        dgv_hoadon.Rows[sd].Cells[2].Value = node.SelectSingleNode("NgayDat").InnerText;
+                        dgv_hoadon.Rows[sd].Cells[3].Value = node.SelectSingleNode("MaNV").InnerText;
+                        dgv_hoadon.Rows[sd].Cells[4].Value = node.SelectSingleNode("MaKH").InnerText;
+                        sd++;
+                        serialNumber++;
+                    }
+
+                  
+                }
+
+            }
+        }
+
+        private void dgv_chitiethoadon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = dgv_chitiethoadon.CurrentCell.RowIndex;
+            if (dgv_chitiethoadon.Rows[index].Cells[1].Value != null)
+            {
+                txt_cthd.Text = dgv_chitiethoadon.Rows[index].Cells[1].Value.ToString();
+                txt_tensp2.Text= dgv_chitiethoadon.Rows[index].Cells[2].Value.ToString();
+               txt_soluong.Text= dgv_chitiethoadon.Rows[index].Cells[3].Value.ToString();
+               txt_giaban.Text= dgv_chitiethoadon.Rows[index].Cells[4].Value.ToString();
+                txt_thanhtien.Text = dgv_chitiethoadon.Rows[index].Cells[5].Value.ToString();
+                masp = dgv_chitiethoadon.Rows[index].Cells[1].Value.ToString();
+            }
+
 
         }
     }

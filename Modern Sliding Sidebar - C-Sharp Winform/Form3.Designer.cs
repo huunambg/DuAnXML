@@ -40,7 +40,6 @@
             this.btn_suacthd = new System.Windows.Forms.Button();
             this.btn_themcthd = new System.Windows.Forms.Button();
             this.btn_xoahd = new System.Windows.Forms.Button();
-            this.btn_suahd = new System.Windows.Forms.Button();
             this.btn_themhd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,6 +66,8 @@
             this.txt_tensp2 = new System.Windows.Forms.TextBox();
             this.cbx_manv = new System.Windows.Forms.ComboBox();
             this.txt_makh = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_tongtien = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_chitiethoadon)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +83,7 @@
             this.btn_timkiem.TabIndex = 36;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // txt_timkiemhd
             // 
@@ -162,6 +164,7 @@
             this.btn_xoacthd.TabIndex = 52;
             this.btn_xoacthd.Text = "Xoá";
             this.btn_xoacthd.UseVisualStyleBackColor = false;
+            this.btn_xoacthd.Click += new System.EventHandler(this.btn_xoacthd_Click);
             // 
             // btn_suacthd
             // 
@@ -174,6 +177,7 @@
             this.btn_suacthd.TabIndex = 51;
             this.btn_suacthd.Text = "Sửa";
             this.btn_suacthd.UseVisualStyleBackColor = false;
+            this.btn_suacthd.Click += new System.EventHandler(this.btn_suacthd_Click);
             // 
             // btn_themcthd
             // 
@@ -186,6 +190,7 @@
             this.btn_themcthd.TabIndex = 50;
             this.btn_themcthd.Text = "Thêm";
             this.btn_themcthd.UseVisualStyleBackColor = false;
+            this.btn_themcthd.Click += new System.EventHandler(this.btn_themcthd_Click);
             // 
             // btn_xoahd
             // 
@@ -198,18 +203,7 @@
             this.btn_xoahd.TabIndex = 55;
             this.btn_xoahd.Text = "Xoá";
             this.btn_xoahd.UseVisualStyleBackColor = false;
-            // 
-            // btn_suahd
-            // 
-            this.btn_suahd.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_suahd.BackColor = System.Drawing.Color.RosyBrown;
-            this.btn_suahd.Location = new System.Drawing.Point(96, 249);
-            this.btn_suahd.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_suahd.Name = "btn_suahd";
-            this.btn_suahd.Size = new System.Drawing.Size(56, 42);
-            this.btn_suahd.TabIndex = 54;
-            this.btn_suahd.Text = "Sửa";
-            this.btn_suahd.UseVisualStyleBackColor = false;
+            this.btn_xoahd.Click += new System.EventHandler(this.btn_xoahd_Click);
             // 
             // btn_themhd
             // 
@@ -468,8 +462,7 @@
             this.dgv_chitiethoadon.RowTemplate.Height = 24;
             this.dgv_chitiethoadon.Size = new System.Drawing.Size(759, 259);
             this.dgv_chitiethoadon.TabIndex = 31;
-            this.dgv_chitiethoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellClick);
-            this.dgv_chitiethoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellContentClick);
+            this.dgv_chitiethoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_chitiethoadon_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -528,12 +521,35 @@
             this.txt_makh.TabIndex = 83;
             this.txt_makh.TextChanged += new System.EventHandler(this.txt_makh_TextChanged);
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 13);
+            this.label5.TabIndex = 84;
+            this.label5.Text = "Tồng tiền phải trả :";
+            // 
+            // txt_tongtien
+            // 
+            this.txt_tongtien.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_tongtien.AutoSize = true;
+            this.txt_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tongtien.Location = new System.Drawing.Point(125, 192);
+            this.txt_tongtien.Name = "txt_tongtien";
+            this.txt_tongtien.Size = new System.Drawing.Size(27, 16);
+            this.txt_tongtien.TabIndex = 85;
+            this.txt_tongtien.Text = ".....";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 569);
+            this.Controls.Add(this.txt_tongtien);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_makh);
             this.Controls.Add(this.cbx_manv);
             this.Controls.Add(this.txt_tensp2);
@@ -553,7 +569,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_mahd);
             this.Controls.Add(this.btn_xoahd);
-            this.Controls.Add(this.btn_suahd);
             this.Controls.Add(this.btn_themhd);
             this.Controls.Add(this.btn_xoacthd);
             this.Controls.Add(this.btn_suacthd);
@@ -582,7 +597,6 @@
         private System.Windows.Forms.Button btn_suacthd;
         private System.Windows.Forms.Button btn_themcthd;
         private System.Windows.Forms.Button btn_xoahd;
-        private System.Windows.Forms.Button btn_suahd;
         private System.Windows.Forms.Button btn_themhd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -614,5 +628,7 @@
         private System.Windows.Forms.TextBox txt_tensp2;
         private System.Windows.Forms.ComboBox cbx_manv;
         private System.Windows.Forms.TextBox txt_makh;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label txt_tongtien;
     }
 }

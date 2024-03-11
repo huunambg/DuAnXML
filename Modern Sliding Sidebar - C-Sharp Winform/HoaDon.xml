@@ -1,106 +1,116 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <QL_HoaDon>
-
-
-	<DS_HoaDon>
-
-		<Id_TaiKhoan>1</Id_TaiKhoan>
-		
-			<HoaDon MaHD="HD1">
-				<NgayDat>2024-03-09</NgayDat>
-				<MaNV>VN001</MaNV>
-				<MaKH>KH001</MaKH>
-				<SanPham MaSanPham="CTHD001">
-					<TenSP>Điện thoại di động</TenSP>
-					<SoLuong>2</SoLuong>
-					<GiaBan>5000000</GiaBan>
-					<ThanhTien>10000000</ThanhTien>
-				</SanPham>
-
-				<SanPham MaSanPham="CTHD002">
-					<TenSP>Laptop</TenSP>
-					<SoLuong>1</SoLuong>
-					<GiaBan>15000000</GiaBan>
-					<ThanhTien>15000000</ThanhTien>
-				</SanPham>
-			</HoaDon>
-
-		
-		
-		<HoaDon MaHD="HD2">
-			<NgayDat>2024-03-09</NgayDat>
-			<MaNV>VN001</MaNV>
-			<MaKH>KH001</MaKH>
-			<SanPham MaSanPham="CTHD001">
-				<TenSP>Điện thoại di động</TenSP>
-				<SoLuong>2</SoLuong>
-				<GiaBan>5000000</GiaBan>
-				<ThanhTien>10000000</ThanhTien>
-			</SanPham>
-
-			<SanPham MaSanPham="CTHD002">
-				<TenSP>Laptop</TenSP>
-				<SoLuong>1</SoLuong>
-				<GiaBan>15000000</GiaBan>
-				<ThanhTien>15000000</ThanhTien>
-			</SanPham>
-
-		</HoaDon>
-		
-	</DS_HoaDon>
-
-
-
-
-	<DS_HoaDon>
-
-		<Id_TaiKhoan>2</Id_TaiKhoan>
-
-		<HoaDon MaHD="HD1">
-			<NgayDat>2024-03-09</NgayDat>
-			<MaNV>VN001</MaNV>
-			<MaKH>KH001</MaKH>
-			<SanPham MaSanPham="CTHD001">
-				<TenSP>Điện thoại di động</TenSP>
-				<SoLuong>2</SoLuong>
-				<GiaBan>5000000</GiaBan>
-				<ThanhTien>10000000</ThanhTien>
-			</SanPham>
-
-			<SanPham MaSanPham="CTHD002">
-				<TenSP>Laptop</TenSP>
-				<SoLuong>1</SoLuong>
-				<GiaBan>15000000</GiaBan>
-				<ThanhTien>15000000</ThanhTien>
-			</SanPham>
-		</HoaDon>
-
-
-
-		<HoaDon MaHD="HD2">
-			<NgayDat>2024-03-09</NgayDat>
-			<MaNV>VN001</MaNV>
-			<MaKH>KH001</MaKH>
-			<SanPham MaSanPham="CTHD001">
-				<TenSP>Điện thoại di động</TenSP>
-				<SoLuong>2</SoLuong>
-				<GiaBan>5000000</GiaBan>
-				<ThanhTien>10000000</ThanhTien>
-			</SanPham>
-
-			<SanPham MaSanPham="CTHD002">
-				<TenSP>Laptop</TenSP>
-				<SoLuong>1</SoLuong>
-				<GiaBan>15000000</GiaBan>
-				<ThanhTien>15000000</ThanhTien>
-			</SanPham>
-
-		</HoaDon>
-
-	</DS_HoaDon>
-
-
-
-
-
+  <DS_HoaDon>
+    <Id_TaiKhoan>1</Id_TaiKhoan>
+    <HoaDon MaHD="HD1">
+      <NgayDat>2024-03-09</NgayDat>
+      <MaNV>VN001</MaNV>
+      <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="CTHD001">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="CTHD002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>15000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+    <HoaDon MaHD="HD2">
+      <NgayDat>2024-03-09</NgayDat>
+      <MaNV>VN001</MaNV>
+      <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="CTHD001">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="SP002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>30000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+    <HoaDon MaHD="HD3">
+      <NgayDat>07/03/2024</NgayDat>
+      <MaNV>NV001</MaNV>
+      <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="SP002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>5</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>75000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="SP002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>15000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="SP002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>30000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+    <HoaDon MaHD="HD4">
+      <NgayDat>07/03/2024</NgayDat>
+      <MaNV>NV001</MaNV>
+      <MaKH>KH003</MaKH>
+    </HoaDon>
+    <HoaDon MaHD="HD5">
+      <NgayDat>07/03/2024</NgayDat>
+      <MaNV>NV002</MaNV>
+      <MaKH>KH05</MaKH>
+      <SanPham MaSanPham="SP0012">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+  </DS_HoaDon>
+  <DS_HoaDon>
+    <Id_TaiKhoan>2</Id_TaiKhoan>
+    <HoaDon MaHD="HD1">
+      <NgayDat>2024-03-09</NgayDat>
+      <MaNV>VN001</MaNV>
+      <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="CTHD001">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="CTHD002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>15000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+    <HoaDon MaHD="HD2">
+      <NgayDat>2024-03-09</NgayDat>
+      <MaNV>VN001</MaNV>
+      <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="CTHD001">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+      <SanPham MaSanPham="CTHD002">
+        <TenSP>Laptop</TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>15000000</GiaBan>
+        <ThanhTien>15000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
+  </DS_HoaDon>
 </QL_HoaDon>

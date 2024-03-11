@@ -17,6 +17,11 @@
       <DiaChi>hai dương</DiaChi>
       <SDT>05i6956i</SDT>
     </KhachHang>
+    <KhachHang MaKH="KH05">
+      <TenKH>Nông Hữu Nam</TenKH>
+      <DiaChi>Bắc Giang</DiaChi>
+      <SDT>0866759322</SDT>
+    </KhachHang>
   </DS_KhachHang>
   <DS_KhachHang>
     <Id_TaiKhoan>3</Id_TaiKhoan>

@@ -60,7 +60,8 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            txt_taikhoan.Text = "namth156";
+            txt_matkhau.Text = "namth156";
         }
 
         private void Close_Button_Click(object sender, EventArgs e)
@@ -78,6 +79,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             this.Hide();
             Form_DangKi dangki = new Form_DangKi();
             dangki.ShowDialog();
+        }
+
+        private void txt_taikhoan_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
