@@ -123,7 +123,7 @@
             this.dgv_hoadon.RowTemplate.Height = 24;
             this.dgv_hoadon.Size = new System.Drawing.Size(759, 259);
             this.dgv_hoadon.TabIndex = 31;
-            this.dgv_hoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellClick);
+//            this.dgv_hoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellClick);
             this.dgv_hoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellContentClick);
             // 
             // STT
@@ -468,7 +468,7 @@
             this.dgv_chitiethoadon.RowTemplate.Height = 24;
             this.dgv_chitiethoadon.Size = new System.Drawing.Size(759, 259);
             this.dgv_chitiethoadon.TabIndex = 31;
-            this.dgv_chitiethoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellClick);
+//            this.dgv_chitiethoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellClick);
             this.dgv_chitiethoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_hoadon_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1

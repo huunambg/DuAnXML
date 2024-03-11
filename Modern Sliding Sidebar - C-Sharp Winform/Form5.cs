@@ -15,7 +15,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     {
         string id_taikhoan;
         XmlElement ql_nhanvien;
-        String filename = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
+        String filename = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
         XmlDocument doc = new XmlDocument();
 
         

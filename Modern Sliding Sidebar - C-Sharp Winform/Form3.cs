@@ -14,17 +14,17 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Form3 : Form
     {
         string id_taikhoan;
-        String namefile = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\HoaDon.xml";
+        String namefile = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\HoaDon.xml";
         XmlDocument doc = new XmlDocument();
         XmlElement ql_hoadon;
-        String filenamesp = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
+        String filenamesp = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\SanPham.xml";
         XmlElement ql_sanpham;
         XmlDocument doc2 = new XmlDocument();
-        String filenamenv = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
+        String filenamenv = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\NhanVien.xml";
         XmlElement ql_nv;
         XmlDocument doc3 = new XmlDocument();
 
-        String filenamekh = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
+        String filenamekh = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
         XmlElement ql_kh;
         XmlDocument doc4 = new XmlDocument();
 
@@ -41,10 +41,10 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void dgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = dgv_hoadon.CurrentCell.RowIndex;
-            if (dgv_hoadon.Rows[index].Cells[1].Value != null)
+            int index = dgv_chitiethoadon.CurrentCell.RowIndex;
+            if (dgv_chitiethoadon.Rows[index].Cells[1].Value != null)
             {
-                showChitiet( dgv_hoadon.Rows[index].Cells[1].Value.ToString());
+                showChitiet( dgv_chitiethoadon.Rows[index].Cells[1].Value.ToString());
             }
 
            
