@@ -75,6 +75,17 @@
         <ThanhTien>10000000</ThanhTien>
       </SanPham>
     </HoaDon>
+    <HoaDon MaHD="HD6">
+      <NgayDat>12/03/2024</NgayDat>
+      <MaNV>NV001</MaNV>
+      <MaKH>KH5</MaKH>
+      <SanPham MaSanPham="SP001">
+        <TenSP>Điện thoại di động</TenSP>
+        <SoLuong>2</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>10000000</ThanhTien>
+      </SanPham>
+    </HoaDon>
   </DS_HoaDon>
   <DS_HoaDon>
     <Id_TaiKhoan>2</Id_TaiKhoan>

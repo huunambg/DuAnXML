@@ -127,6 +127,9 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             LoadAutocompletetxtFromXml();
             SetupAutoComplete();
             loadcombobox();
+
+            txt_ngaymua.Value = DateTime.Now;
+
         }
 
         void show(DataGridView dgv)

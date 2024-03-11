@@ -22,6 +22,11 @@
       <DiaChi>Bắc Giang</DiaChi>
       <SDT>0866759322</SDT>
     </KhachHang>
+    <KhachHang MaKH="KH5">
+      <TenKH>Nông Huu Nam</TenKH>
+      <DiaChi>BG</DiaChi>
+      <SDT>216554465</SDT>
+    </KhachHang>
   </DS_KhachHang>
   <DS_KhachHang>
     <Id_TaiKhoan>3</Id_TaiKhoan>
