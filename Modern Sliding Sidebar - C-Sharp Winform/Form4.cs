@@ -14,11 +14,9 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
     public partial class Form4 : Form
     {
         string id_taikhoan;
-        String namefile = "D:\\zKiemlongJr\\XML\\BaoCaoXML_Nhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
+        String namefile = "D:\\Soure_Code\\Window\\BaoCaoXMLNhom3\\Modern Sliding Sidebar - C-Sharp Winform\\KhachHang.xml";
         XmlDocument doc = new XmlDocument();
         XmlElement ql_kh;
-        private string ma_kh;
-
         public Form4(string id_taikhoan)
         {
             InitializeComponent();

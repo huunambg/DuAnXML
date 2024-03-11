@@ -112,7 +112,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void Orders_Button_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
+            Form3 f = new Form3(id_taikhoan);
             f.TopLevel = false;
             f.Size = gunaElipsePanel1.Size; // Set size of the new form to match PanelMain
             gunaElipsePanel1.Controls.Clear();

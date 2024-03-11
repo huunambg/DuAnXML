@@ -6,9 +6,9 @@
 
 		<Id_TaiKhoan>1</Id_TaiKhoan>
 		
-			<HoaDon MaHD="HD001">
+			<HoaDon MaHD="HD1">
 				<NgayDat>2024-03-09</NgayDat>
-				<MaVN>VN001</MaVN>
+				<MaNV>VN001</MaNV>
 				<MaKH>KH001</MaKH>
 				<SanPham MaSanPham="CTHD001">
 					<TenSP>Điện thoại di động</TenSP>
@@ -27,9 +27,9 @@
 
 		
 		
-		<HoaDon MaHD="HD002">
+		<HoaDon MaHD="HD2">
 			<NgayDat>2024-03-09</NgayDat>
-			<MaVN>VN001</MaVN>
+			<MaNV>VN001</MaNV>
 			<MaKH>KH001</MaKH>
 			<SanPham MaSanPham="CTHD001">
 				<TenSP>Điện thoại di động</TenSP>
@@ -56,9 +56,9 @@
 
 		<Id_TaiKhoan>2</Id_TaiKhoan>
 
-		<HoaDon MaHD="HD001">
+		<HoaDon MaHD="HD1">
 			<NgayDat>2024-03-09</NgayDat>
-			<MaVN>VN001</MaVN>
+			<MaNV>VN001</MaNV>
 			<MaKH>KH001</MaKH>
 			<SanPham MaSanPham="CTHD001">
 				<TenSP>Điện thoại di động</TenSP>
@@ -77,9 +77,9 @@
 
 
 
-		<HoaDon MaHD="HD002">
+		<HoaDon MaHD="HD2">
 			<NgayDat>2024-03-09</NgayDat>
-			<MaVN>VN001</MaVN>
+			<MaNV>VN001</MaNV>
 			<MaKH>KH001</MaKH>
 			<SanPham MaSanPham="CTHD001">
 				<TenSP>Điện thoại di động</TenSP>
