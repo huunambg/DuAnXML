@@ -3,7 +3,7 @@
   <DS_SanPham>
     <Id_TaiKhoan>1</Id_TaiKhoan>
     <SanPham MaSP="SP001">
-      <TenSP>Điện thoại di động</TenSP>
+      <TenSP>Điện thoại di </TenSP>
       <Gia>5000000</Gia>
       <SoLuongTon>50</SoLuongTon>
       <NgaySX>2023-01-15</NgaySX>
@@ -16,12 +16,40 @@
       <NgaySX>2022-09-20</NgaySX>
       <HanSD>2026-09-20</HanSD>
     </SanPham>
-    <SanPham MaSP="SP03">
-      <TenSP>VAloRant</TenSP>
-      <Gia>2222</Gia>
-      <SoLuongTon>333</SoLuongTon>
-      <NgaySX>333</NgaySX>
-      <HanSD>3333</HanSD>
+    <SanPham MaSP="SP3">
+      <TenSP>RamLapTop</TenSP>
+      <Gia>4000000</Gia>
+      <SoLuongTon>50</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP4">
+      <TenSP>Ổ cứng</TenSP>
+      <Gia>1000000</Gia>
+      <SoLuongTon>50</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP5">
+      <TenSP>Vỏ Case</TenSP>
+      <Gia>4020000</Gia>
+      <SoLuongTon>50</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP6">
+      <TenSP>Chuột gaming</TenSP>
+      <Gia>4020000</Gia>
+      <SoLuongTon>30</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
+    </SanPham>
+    <SanPham MaSP="SP7">
+      <TenSP>Bàn Phím</TenSP>
+      <Gia>2020000</Gia>
+      <SoLuongTon>10</SoLuongTon>
+      <NgaySX>2023-01-15</NgaySX>
+      <HanSD>2025-01-15</HanSD>
     </SanPham>
   </DS_SanPham>
   <DS_SanPham>

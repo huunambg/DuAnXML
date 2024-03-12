@@ -35,55 +35,56 @@
         <GiaBan>15000000</GiaBan>
         <ThanhTien>30000000</ThanhTien>
       </SanPham>
+      <SanPham MaSanPham="SP3">
+        <TenSP>RamLapTop</TenSP>
+        <SoLuong>3</SoLuong>
+        <GiaBan>4000000</GiaBan>
+        <ThanhTien>12000000</ThanhTien>
+        <TenSP>RamLapTop</TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>4000000</GiaBan>
+        <ThanhTien>4000000</ThanhTien>
+      </SanPham>
     </HoaDon>
     <HoaDon MaHD="HD3">
       <NgayDat>07/03/2024</NgayDat>
       <MaNV>NV001</MaNV>
       <MaKH>KH001</MaKH>
+      <SanPham MaSanPham="SP001">
+        <TenSP>Điện thoại di </TenSP>
+        <SoLuong>6</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>30000000</ThanhTien>
+        <TenSP>Điện thoại di </TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>5000000</ThanhTien>
+        <TenSP>Điện thoại di </TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>5000000</ThanhTien>
+        <TenSP>Điện thoại di </TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>5000000</ThanhTien>
+        <TenSP>Điện thoại di </TenSP>
+        <SoLuong>1</SoLuong>
+        <GiaBan>5000000</GiaBan>
+        <ThanhTien>5000000</ThanhTien>
+      </SanPham>
       <SanPham MaSanPham="SP002">
         <TenSP>Laptop</TenSP>
         <SoLuong>5</SoLuong>
         <GiaBan>15000000</GiaBan>
         <ThanhTien>75000000</ThanhTien>
-      </SanPham>
-      <SanPham MaSanPham="SP002">
         <TenSP>Laptop</TenSP>
         <SoLuong>1</SoLuong>
         <GiaBan>15000000</GiaBan>
-        <ThanhTien>15000000</ThanhTien>
-      </SanPham>
-      <SanPham MaSanPham="SP002">
+        <ThanhTien>5000000</ThanhTien>
         <TenSP>Laptop</TenSP>
-        <SoLuong>2</SoLuong>
+        <SoLuong>3</SoLuong>
         <GiaBan>15000000</GiaBan>
-        <ThanhTien>30000000</ThanhTien>
-      </SanPham>
-    </HoaDon>
-    <HoaDon MaHD="HD4">
-      <NgayDat>07/03/2024</NgayDat>
-      <MaNV>NV001</MaNV>
-      <MaKH>KH003</MaKH>
-    </HoaDon>
-    <HoaDon MaHD="HD5">
-      <NgayDat>07/03/2024</NgayDat>
-      <MaNV>NV002</MaNV>
-      <MaKH>KH05</MaKH>
-      <SanPham MaSanPham="SP0012">
-        <TenSP>Điện thoại di động</TenSP>
-        <SoLuong>2</SoLuong>
-        <GiaBan>5000000</GiaBan>
-        <ThanhTien>10000000</ThanhTien>
-      </SanPham>
-    </HoaDon>
-    <HoaDon MaHD="HD6">
-      <NgayDat>12/03/2024</NgayDat>
-      <MaNV>NV001</MaNV>
-      <MaKH>KH5</MaKH>
-      <SanPham MaSanPham="SP001">
-        <TenSP>Điện thoại di động</TenSP>
-        <SoLuong>2</SoLuong>
-        <GiaBan>5000000</GiaBan>
-        <ThanhTien>10000000</ThanhTien>
+        <ThanhTien>45000000</ThanhTien>
       </SanPham>
     </HoaDon>
   </DS_HoaDon>

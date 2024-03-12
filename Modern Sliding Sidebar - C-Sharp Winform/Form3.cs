@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -235,6 +236,18 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             {
                 if (txt_cthd.Text == node.SelectSingleNode("@MaSP").InnerText)
                 {
+
+                    if (txt_soluong.Text.Length > 0)
+                    {
+                        int gia = int.Parse(node.SelectSingleNode("Gia").InnerText);
+
+                        int tht = gia * int.Parse(txt_soluong.Text);
+
+                        txt_thanhtien.Text = tht.ToString();
+
+
+                    }
+
                     txt_tensp2.Text = node.SelectSingleNode("TenSP").InnerText;
                     txt_giaban.Text = node.SelectSingleNode("Gia").InnerText;
                 }
@@ -364,108 +377,207 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
 
         private void btn_themcthd_Click(object sender, EventArgs e)
         {
-            if (mahoadon != "" || txt_tensp2.Text.Length > 0)
+            try
             {
-                dgv_chitiethoadon.Rows.Clear();
-                doc.Load(namefile);
-                ql_hoadon = doc.DocumentElement;
+                int gia = int.Parse(txt_giaban.Text);
 
-                XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+                int sl = int.Parse(txt_soluong.Text);
 
+                if (mahoadon != "" && txt_tensp2.Text.Length > 0 && txt_cthd.Text.Length>0 && txt_giaban.Text.Length > 0 && txt_cthd.Text.Length > 0)
+                {
+                    dgv_chitiethoadon.Rows.Clear();
+                    doc.Load(namefile);
+                    ql_hoadon = doc.DocumentElement;
 
-                XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
-
-
-                XmlNode SanPham = doc.CreateElement("SanPham");
-
-
-                XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
-                MaSanPham.Value = txt_cthd.Text;
-                SanPham.Attributes.Append(MaSanPham);
-
-                XmlElement TenSP = doc.CreateElement("TenSP");
-                TenSP.InnerText = txt_tensp2.Text;
-                SanPham.AppendChild(TenSP);
-
-                XmlElement SoLuong = doc.CreateElement("SoLuong");
-                SoLuong.InnerText = txt_soluong.Text;
-                SanPham.AppendChild(SoLuong);
-
-                XmlElement GiaBan = doc.CreateElement("GiaBan");
-                GiaBan.InnerText = txt_giaban.Text;
-                SanPham.AppendChild(GiaBan);
+                    XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
 
 
-                XmlElement ThanhTien = doc.CreateElement("ThanhTien");
-                ThanhTien.InnerText = txt_thanhtien.Text;
-                SanPham.AppendChild(ThanhTien);
+                    XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
 
-                HoaDon.AppendChild(SanPham);
 
-                doc.Save(namefile);
+                    XmlNode SanPhamCu = HoaDon.SelectSingleNode("SanPham[@MaSanPham ='" + txt_cthd.Text + "']");
 
-                showChitiet(mahoadon);
+
+
+
+               //     string id = SanPhamCu.SelectSingleNode("ThanhTien").InnerText;
+
+
+                    if (SanPhamCu != null)
+                    {
+
+                        XmlNode SanPham = SanPhamCu;
+
+                        int sl_old = int.Parse(SanPhamCu.SelectSingleNode("SoLuong").InnerText);
+
+                        int slladd = int.Parse(txt_soluong.Text);
+
+                        int sum = sl_old + slladd;
+
+
+
+                        int get_gia = int.Parse(SanPham.SelectSingleNode("GiaBan").InnerText);
+
+
+                        SanPham.SelectSingleNode("SoLuong").InnerText = sum.ToString();
+                        SanPham.SelectSingleNode("ThanhTien").InnerText = (sum * get_gia).ToString();
+
+
+                        XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
+                        MaSanPham.Value = txt_cthd.Text;
+                        SanPham.Attributes.Append(MaSanPham);
+
+                        XmlElement TenSP = doc.CreateElement("TenSP");
+                        TenSP.InnerText = txt_tensp2.Text;
+                        SanPham.AppendChild(TenSP);
+
+                        XmlElement SoLuong = doc.CreateElement("SoLuong");
+                        SoLuong.InnerText = txt_soluong.Text;
+                        SanPham.AppendChild(SoLuong);
+
+                        XmlElement GiaBan = doc.CreateElement("GiaBan");
+                        GiaBan.InnerText = txt_giaban.Text;
+                        SanPham.AppendChild(GiaBan);
+
+
+                        XmlElement ThanhTien = doc.CreateElement("ThanhTien");
+                        ThanhTien.InnerText = txt_thanhtien.Text;
+                        SanPham.AppendChild(ThanhTien);
+
+                        HoaDon.ReplaceChild(SanPham, SanPhamCu);
+
+                        doc.Save(namefile);
+
+                        showChitiet(mahoadon);
+
+                    }
+                    else
+                    {
+
+                        XmlNode SanPham = doc.CreateElement("SanPham");
+
+
+                        XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
+                        MaSanPham.Value = txt_cthd.Text;
+                        SanPham.Attributes.Append(MaSanPham);
+
+                        XmlElement TenSP = doc.CreateElement("TenSP");
+                        TenSP.InnerText = txt_tensp2.Text;
+                        SanPham.AppendChild(TenSP);
+
+                        XmlElement SoLuong = doc.CreateElement("SoLuong");
+                        SoLuong.InnerText = txt_soluong.Text;
+                        SanPham.AppendChild(SoLuong);
+
+                        XmlElement GiaBan = doc.CreateElement("GiaBan");
+                        GiaBan.InnerText = txt_giaban.Text;
+                        SanPham.AppendChild(GiaBan);
+
+
+                        XmlElement ThanhTien = doc.CreateElement("ThanhTien");
+                        ThanhTien.InnerText = txt_thanhtien.Text;
+                        SanPham.AppendChild(ThanhTien);
+
+                        HoaDon.AppendChild(SanPham);
+
+                        doc.Save(namefile);
+
+                        showChitiet(mahoadon);
+
+                    }
+              
+                }
+
+
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
+                }
+
+
 
             }
-            else
+            catch
             {
-                MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
-            }
+                MessageBox.Show("Vui lòng nhập giá và số lượng sản phẩm là số", "Lỗi");
+            }        
+
+          
         }
 
         private void btn_suacthd_Click(object sender, EventArgs e)
         {
-            if (mahoadon != "" || txt_tensp2.Text.Length > 0)
+
+
+            try
             {
-                dgv_chitiethoadon.Rows.Clear();
-                doc.Load(namefile);
-                ql_hoadon = doc.DocumentElement;
 
-                XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
+                int gia = int.Parse(txt_giaban.Text);
 
+                int sl = int.Parse(txt_soluong.Text);
 
-                XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
+                if (mahoadon != "" || txt_tensp2.Text.Length > 0)
+                {
+                    dgv_chitiethoadon.Rows.Clear();
+                    doc.Load(namefile);
+                    ql_hoadon = doc.DocumentElement;
 
-
-
-                XmlNode SanPhamCu = HoaDon.SelectSingleNode("SanPham[@MaSanPham ='" + masp + "']");
-
-
-
-                XmlNode SanPham = doc.CreateElement("SanPham");
+                    XmlNode DS_HoaDon = ql_hoadon.SelectSingleNode("DS_HoaDon[Id_TaiKhoan ='" + this.id_taikhoan + "']");
 
 
-                XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
-                MaSanPham.Value = txt_cthd.Text;
-                SanPham.Attributes.Append(MaSanPham);
-
-                XmlElement TenSP = doc.CreateElement("TenSP");
-                TenSP.InnerText = txt_tensp2.Text;
-                SanPham.AppendChild(TenSP);
-
-                XmlElement SoLuong = doc.CreateElement("SoLuong");
-                SoLuong.InnerText = txt_soluong.Text;
-                SanPham.AppendChild(SoLuong);
-
-                XmlElement GiaBan = doc.CreateElement("GiaBan");
-                GiaBan.InnerText = txt_giaban.Text;
-                SanPham.AppendChild(GiaBan);
+                    XmlNode HoaDon = DS_HoaDon.SelectSingleNode("HoaDon[@MaHD ='" + mahoadon + "']");
 
 
-                XmlElement ThanhTien = doc.CreateElement("ThanhTien");
-                ThanhTien.InnerText = txt_thanhtien.Text;
-                SanPham.AppendChild(ThanhTien);
 
-                HoaDon.ReplaceChild(SanPham,SanPhamCu);
+                    XmlNode SanPhamCu = HoaDon.SelectSingleNode("SanPham[@MaSanPham ='" + txt_cthd + "']");
 
-                doc.Save(namefile);
+                    if (SanPhamCu != null)
+                    {
+                        XmlNode SanPham = doc.CreateElement("SanPham");
 
-                showChitiet(mahoadon);
 
+                        XmlAttribute MaSanPham = doc.CreateAttribute("MaSanPham");
+                        MaSanPham.Value = txt_cthd.Text;
+                        SanPham.Attributes.Append(MaSanPham);
+
+                        XmlElement TenSP = doc.CreateElement("TenSP");
+                        TenSP.InnerText = txt_tensp2.Text;
+                        SanPham.AppendChild(TenSP);
+
+                        XmlElement SoLuong = doc.CreateElement("SoLuong");
+                        SoLuong.InnerText = txt_soluong.Text;
+                        SanPham.AppendChild(SoLuong);
+
+                        XmlElement GiaBan = doc.CreateElement("GiaBan");
+                        GiaBan.InnerText = txt_giaban.Text;
+                        SanPham.AppendChild(GiaBan);
+
+
+                        XmlElement ThanhTien = doc.CreateElement("ThanhTien");
+                        ThanhTien.InnerText = txt_thanhtien.Text;
+                        SanPham.AppendChild(ThanhTien);
+
+                        HoaDon.ReplaceChild(SanPham, SanPhamCu);
+
+                        doc.Save(namefile);
+
+                        showChitiet(mahoadon);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sản phẩm không có trong hóa đơn", "Lỗi");
+                    }
+                  
+
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Vui lòng nhập thông tin sản phẩm", "Lỗi");
+                MessageBox.Show("Vui lòng nhập giá và số lượng sản phẩm là số", "Lỗi");
             }
         }
 

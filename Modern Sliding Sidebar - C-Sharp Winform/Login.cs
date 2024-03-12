@@ -31,26 +31,37 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
             XmlNode check_tk = ql_taikhoan.SelectSingleNode("TaiKhoan[TaiKhoan ='" + txt_taikhoan.Text + "']");
 
 
-            if (check_tk != null)
+            if (txt_taikhoan.Text.Length >= 6 && txt_matkhau.Text.Length>=6)
             {
-                if (check_tk.SelectSingleNode("MatKhau").InnerText == txt_matkhau.Text)
+                if (check_tk != null)
                 {
-                    Form1 f = new Form1(check_tk.SelectSingleNode("@id_TaiKhoan").Value.ToString());
-                    f.Show();
-                    this.Hide();
-                    MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (check_tk.SelectSingleNode("MatKhau").InnerText == txt_matkhau.Text)
+                    {
+                        Form1 f = new Form1(check_tk.SelectSingleNode("@id_TaiKhoan").Value.ToString());
+                        f.Show();
+                        this.Hide();
+                        MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Đăng nhập thất bại");
+                    }
+
                 }
                 else
                 {
-
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Đăng nhập thất bại");
+                    MessageBox.Show("Tài khoản không tồn tại", "Đăng nhập thất bại");
                 }
-
             }
             else
             {
-                MessageBox.Show("Tài khoản không tồn tại", "Đăng nhập thất bại");
+
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhâp tài khoản hoặc mật khẩu tối thiếu ít nhất là 6 ký tự", "Lỗi");
+
             }
+
+           
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -62,6 +73,7 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         {
             txt_taikhoan.Text = "namth156";
             txt_matkhau.Text = "namth156";
+            txt_matkhau.PasswordChar= '*';
         }
 
         private void Close_Button_Click(object sender, EventArgs e)
@@ -84,6 +96,11 @@ namespace Modern_Sliding_Sidebar___C_Sharp_Winform
         private void txt_taikhoan_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void txt_matkhau_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
